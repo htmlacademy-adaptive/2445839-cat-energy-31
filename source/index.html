@@ -6,6 +6,8 @@
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="apple-touch-icon" sizes="512x512" href="favicons/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
   <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -19,13 +21,13 @@
     <header class="main-header">
       <div class="container">
         <a class="main-header__logo logo" href="index.html">
-          <p class="logo-wrapper">
+          <div class="logo-wrapper">
             <picture>
               <source media="(min-width:1200px)" width="70" height="59" type="image/jpeg" srcset="images/logotip/logo-desktop@1x.png, images/logotip/logo-desktop@2x.png 2x">
               <source media="(min-width:768px)" width="60" height="50" srcset="images/logotip/logo-tablet@1x.png, images/logotip/logo-tablet@2x.png 2x" type="image/jpeg">
               <img src="images/logotip/logo-mobile@1x.png" width="33" height="38" alt="Логотип супер котик." srcset="images/logotip/logo-mobile@2x.png 2x">
             </picture>
-          </p>
+          </div>
         </a>
         <a class="main-header__logo logo" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
           <svg class="name-logo" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24">
@@ -37,11 +39,11 @@
           <button class="main-nav__toggle main-nav__toggle--close" type="button">
             <span class="visually-hidden">Открывает меню навигации.</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list sate-list">
-              <li class="sate-list__item sate-list__item-current"><a class="main-nav__link" href="#">главная</a></li>
-              <li class="sate-list__item"><a class="main-nav__link" href="catalog.html">каталог продукции</a></li>
-              <li class="sate-list__item"><a class="main-nav__link" href="#">подбор программы</a></li>
+          <div class="sate">
+            <ul class="sate__list">
+              <li class="sate__item sate__item-current"><a class="sate__link" href="#">Главная</a></li>
+              <li class="sate__item"><a class="sate__link" href="catalog.html">Каталог продукции</a></li>
+              <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
             </ul>
           </div>
         </nav>
@@ -56,7 +58,7 @@
           <h1 class="offer__title">Функциональное
             питание для котов</h1>
           <p class="offer__text">Занялся собой? Займись котом!</p>
-          <a class="button button--primary button--big" href="#">подобрать программу</a>
+          <a class="button button--big" href="#">Подобрать программу</a>
         </div>
         <p class="offer__images-wrapper">
           <picture>
@@ -73,14 +75,14 @@
         <h2 class="visually-hidden">Преимущество питания «Кэт энерджи».</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--skinny">
-            <h3 class="advantages__title">похудение</h3>
+            <h3 class="advantages__title">Похудение</h3>
             <p class="advantages__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="advantages__link" href="#">каталог slim</a>
+            <a class="advantages__link" href="#">Каталог slim</a>
           </li>
           <li class="advantages__item advantages__item--full">
             <h3 class="advantages__title">Набор массы</h3>
             <p class="advantages__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="advantages__link" href="#">каталог pro</a>
+            <a class="advantages__link" href="#">Каталог pro</a>
           </li>
         </ul>
       </div>
@@ -96,7 +98,7 @@
               содержит только полезные
               питательные вещества.</p>
           </li>
-          <li class="dignities__item dignities__item--nutrients.">
+          <li class="dignities__item dignities__item--nutrients">
             <p class="dignities__text">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
@@ -128,7 +130,7 @@
             <p class="example__achievement-title">затрачено времени</p>
           </div>
         </div>
-        <b class="example__desc">Затраты на питание: 15 000 РУБ.</b>
+        <b class="example__desc">Затраты на питание: <span class="example__price">15 000 руб.</span></b>
       </div>
     </section>
     <!-- слайдер -->
@@ -140,7 +142,6 @@
             <li class="slider__item">
               <p class="slider__wrapper-images">
                 <picture>
-                  <source media="(min-width:1200px)" width="560" height="512" type="image/png" srcset="images/slider/slider1-desktop@1x.png, images/slider/slider1-desktop@2x.png 2x">
                   <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/slider/slider1-desktop@1x.png, images/slider/slider1-desktop@2x.png 2x">
                   <img src="images/slider/slider1-mobile@1x.png" width="280" height="256" alt="Первый фрагмент: «Толстый кот»." srcset="images/slider/slider1-mobile@2x.png 2x">
                 </picture>
@@ -149,7 +150,6 @@
             <li class="slider__item">
               <p class="slider__wrapper-images">
                 <picture>
-                  <source media="(min-width:1200px)" width="560" height="512" type="image/png" srcset="images/slider/slider2-desktop@1x.png, images/slider/slider2-desktop@2x.png 2x">
                   <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/slider/slider2-desktop@1x.png, images/slider/slider2-desktop@2x.png 2x">
                   <img src="images/slider/slider2-mobile@1x.png" width="280" height="256" alt="Второй фрагмент «Худой кот»." srcset="images/slider/slider2-mobile@2x.png 2x">
                 </picture>
@@ -171,20 +171,20 @@
   <!-- футер -->
   <footer class="main-footer">
     <!-- наш адрес -->
-    <section class="main-footer__address address">
+    <section class="address">
       <h2 class="visually-hidden">Наш адрес</h2>
-      <p class="address-map">
+      <div class="address__map">
         <picture>
           <source media="(min-width:1200px)" width="1440" height="400" type="image/jpg" srcset="images/footer/location/location-desktop@1x.jpg, images/footer/location/location-desktop@2x.jpg 2x">
           <source media="(min-width:768px)" width="768" height="400" type="image/jpg" srcset="images/footer/location/location-tablet@1x.jpg, images/footer/location/location-tablet@2x.jpg 2x">
           <img src="images/footer/location/location-mobile@1x.jpg" width="320" height="362" alt="Местоположение на карте нашего магазина «Кэт энерджи»." srcset="images/footer/location/location-mobile@2x.jpg 2x">
         </picture>
-      </p>
+      </div>
       <div class="container">
-        <div class="address-wrapper">
-          <p class="address-text">Приглашаем к сотрудничеству дилеров!</p>
+        <div class="address__wrapper">
+          <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
           <address class="address-info">
-            <p class="address-info__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p class="address-info__text">ул. Большая Конюшенная, д. 19/8 <span class="address-info__desc">Санкт-Петербург</span></p>
           </address>
         </div>
       </div>
@@ -198,7 +198,7 @@
               <path d="M1.62 21.96a9.43 9.43 0 0 1-1.6-5.72V7.76a9.56 9.56 0 0 1 1.5-5.82C2.62.61 4.32 0 6.83 0c2.5 0 4.1.61 5.1 1.74a7.43 7.43 0 0 1 1.51 5v2.04h-4.9V6.43c.03-.7-.07-1.39-.3-2.04a1.42 1.42 0 0 0-1.4-.82c-.71 0-1.21.2-1.41.72a6.72 6.72 0 0 0-.3 2.25v10.92a4.3 4.3 0 0 0 .4 2.15c.2.5.7.71 1.4.71s1.1-.2 1.3-.71c.23-.7.33-1.42.3-2.15v-2.45h4.91v2.05a7.92 7.92 0 0 1-1.5 5.1c-1 1.23-2.7 1.84-5.1 1.84-2.41-.1-4.22-.71-5.22-2.04ZM19.35.3h5.7l4.21 23.3h-4.6l-.8-4.91h-3.31l-.8 4.9h-4.7L19.34.31Zm4.1 15.33-1.2-9.1-1.2 9.1h2.4ZM32.77 4.19h-3.4V.3h11.9v3.77h-3.4V23.6h-5.1V4.2ZM50.4.3h8.8v2.46h-5.7v7.66h4.6v2.35h-4.6v8.57h5.7v2.35h-8.9V.31h.1ZM61.8.3h2.21l6.51 15.43V.3h2.6v23.28h-2l-6.6-15.93v15.93H61.8V.31ZM76.13.3h8.81v2.46h-5.7v7.66h4.6v2.35h-4.6v8.57h5.7v2.35h-8.81V.31ZM87.54.3h4.61a7.9 7.9 0 0 1 5.1 1.44c1.1.92 1.6 2.55 1.6 4.7 0 2.96-.9 4.8-2.8 5.4l3.21 11.65h-3.1l-3-10.93h-2.51V23.5h-3.2V.3h.1Zm4.41 10.01c1.03.1 2.06-.2 2.9-.81.6-.51.9-1.53.9-3.07a6.72 6.72 0 0 0-.3-2.24 2.58 2.58 0 0 0-1.1-1.23 4.49 4.49 0 0 0-2.2-.4h-1.4v7.65h1.2v.1ZM102.86 21.86a10.49 10.49 0 0 1-1.4-5.93V8.17a17 17 0 0 1 .5-4.4c.34-1.06 1-2 1.9-2.65 1.12-.67 2.41-1 3.71-.92 2.1 0 3.6.51 4.5 1.64a7.93 7.93 0 0 1 1.41 5.1v.82h-3v-.71c0-.86-.07-1.71-.2-2.56a2.05 2.05 0 0 0-.8-1.32 3.05 3.05 0 0 0-1.9-.51 2.96 2.96 0 0 0-2.01.6 2.3 2.3 0 0 0-.8 1.64c-.13.92-.2 1.84-.2 2.76v8.68a9.43 9.43 0 0 0 .6 3.88c.4.82 1.2 1.12 2.4 1.12a2.38 2.38 0 0 0 2.4-1.22c.53-1.3.77-2.69.7-4.09V14.4h-2.9v-2.35h5.81V23.6h-2l-.3-2.65a4.17 4.17 0 0 1-1.56 2.2c-.74.53-1.64.8-2.55.76a4.92 4.92 0 0 1-4.3-2.04ZM119.99 15.42 115.09.41h3l3.5 11.23L125 .41H128l-4.9 15.01v8.17h-3.01v-8.17h-.1Z" />
             </g>
           </svg></a>
-        <ul class="main-footer__list social">
+        <ul class="social">
           <li class="social__item">
             <a class="social__link" aria-label="Вконтакте" href="#">
               <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="27" height="17" viewBox="0 0 27 17">
@@ -221,9 +221,9 @@
             </a>
           </li>
         </ul>
-        <div class="main-footer__inner copy">
-          <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive"><span>HTML Academy</span></a>
-          <a class="copy__link" aria-label="Логотип компании HTML Academy" href="https://htmlacademy.ru/intensive/adaptive"><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
+        <div class="copy">
+          <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="copy__text">HTML Academy</span></a>
+          <a class="copy__link" aria-label="Логотип компании HTML Academy." href="https://htmlacademy.ru/intensive/adaptive"><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
               <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" />
             </svg></a>
         </div>

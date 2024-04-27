@@ -1,0 +1,44 @@
+.example {}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: $bg-color-dark;
+  margin: 0;
+}
+
+.example__text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  margin: 0;
+}
+
+.example__wrapper {}
+
+.example__achievement {}
+
+.example__achievement-desc {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $bg-color-dark;
+  text-transform: uppercase;
+}
+
+.example__achievement-title {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+}
+
+.example__desc {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $bg-color-dark;
+}
+
+.example__price {}

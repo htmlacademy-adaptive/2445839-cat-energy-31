@@ -1,0 +1,38 @@
+.advantages {
+  color: $bg-color-dark;
+  background-color: $background-grey;
+}
+
+.advantages__list {}
+
+.advantages__item {}
+
+.advantages__item--skinny {}
+
+.advantages__title {
+  font-size: 24px;
+  line-height: 37px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.advantages__text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.advantages__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+  width: 168px;
+  color: $bg-color-dark;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.advantages__item--full {}
+

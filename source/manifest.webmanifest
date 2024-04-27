@@ -1,6 +1,16 @@
 {
   "icons": [
     {
+      "src": "favicons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "favicons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
       "src": "favicons/apple-icon-152x152.png",
       "type": "image/png",
       "sizes": "152x152"
