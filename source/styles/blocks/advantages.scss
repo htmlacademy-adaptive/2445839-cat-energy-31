@@ -1,19 +1,79 @@
 .advantages {
   color: $bg-color-dark;
-  background-color: $background-grey;
 }
 
-.advantages__list {}
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-.advantages__item {}
+.advantages__item {
+  width: 280px;
+  height: 266px;
+  padding: 30px 20px 18px;
+  background-color: $background-grey;
+  margin-bottom: 20px;
+}
 
 .advantages__item--skinny {}
+
+.advantages__item--full {}
 
 .advantages__title {
   font-size: 24px;
   line-height: 37px;
-  margin: 0;
+  margin: 0 0 29px;
   text-transform: uppercase;
+  text-align: end;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -6px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $basik-green;
+    background-position: left;
+  }
+}
+
+.advantages__title--weight-loss {
+  width: 180px;
+
+  &::after {
+    content: "";
+    width: 36px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: -9px;
+    background-image: url("../../icons/stack.svg#advantages_cat-slim");
+    background-repeat: no-repeat;
+    background-size: 36px 50px;
+    background-position: left top;
+  }
+}
+
+.advantages__title--weight-gain {
+  width: 217px;
+  padding-left: 78px;
+
+  &::after {
+    content: "";
+    width: 67px;
+    height: 28px;
+    position: absolute;
+    left: -8px;
+    top: 10px;
+    background-image: url("../../icons/stack.svg#advantages_cat2-slim");
+    background-repeat: no-repeat;
+    background-size: 67px 28px;
+    background-position: left center;
+  }
 }
 
 .advantages__text {
@@ -21,18 +81,52 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+  margin-bottom: 38px;
 }
 
 .advantages__link {
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
   display: block;
-  width: 168px;
+  width: 139px;
+  padding: 4px 0;
   color: $bg-color-dark;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 240px;
+    height: 1px;
+    background-color: $bg-borders;
+  }
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    right: 17px;
+    top: 6px;
+    background-image: url("../../icons/stack.svg#advantages_arrow");
+    background-repeat: no-repeat;
+    background-size: 24px 12px;
+    background-position: center;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    width: 32px;
+    background-size: 32px 15px;
+    right: 0;
+  }
+
+  &:active,
+  &:active::before {
+    opacity: 0.3;
+  }
 }
-
-.advantages__item--full {}
-

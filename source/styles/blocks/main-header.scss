@@ -1,6 +1,22 @@
 .main-header{
 
 }
-.main-header__logo{
 
+.main-header__logo-container {
+  display: flex;
+  align-items: center;
+
+}
+
+.main-header__logo {
+  display: block;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
