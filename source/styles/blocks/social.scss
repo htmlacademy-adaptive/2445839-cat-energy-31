@@ -1,6 +1,35 @@
-.social {}
+.social {
+  width: 160px;
+  min-height: 22px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 24px;
+  fill: $bg-social;
+}
 
-.social__item {}
+.social__item {
+  text-align: center;
+}
 
-.social__link {}
+.social__link {
+  width: 28px;
+  height: 22px;
+  display: block;
+  fill: $bg-social;
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    fill: $basik-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 

@@ -21,6 +21,7 @@
   padding-left: 80px;
   margin-bottom: 24px;
   position: relative;
+  display: flex;
 
 
   &::before {
@@ -31,26 +32,39 @@
     width: 60px;
     height: 60px;
     background-color: $basik-green;
+    z-index: 0;
   }
 
   @media (min-width: 768px) {
-    &::marker {
+    &::after {
       position: absolute;
-      right: 0;
-      top: 0;
+      right: 50px;
+      top: 20px;
       content: counters(example, ".");
       font-size: 30px;
       line-height: 30px;
       color: $background-grey;
     }
+  }
+}
 
-    // &::after {
-    //   position: absolute;
-    //   content: counters(example, ".");
-    //   font-size: 30px;
-    //   line-height: 30px;
-    //   color: $background-grey;
-    // }
+.dignities-offer {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+  }
+}
+
+.item-food {
+  &::after {
+    width: 24px;
+    height: 28px;
+    background-image: url("../../images/dignities/icon-leaf.svg");
+    background-size: 24px 28px;
   }
 }
 
@@ -63,51 +77,29 @@
   margin: 0;
 }
 
-.dignities__item--food {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("../../images/dignities/icon-leaf.svg");
-    background-repeat: no-repeat;
-    background-size: 30px 32px;
-  }
-}
-
-.dignities__item--nutrients {
+.item-nutrients {
   &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 26px;
+    height: 29px;
     background-image: url("../../images/dignities/icon-powder.svg");
-    background-repeat: no-repeat;
     background-size: 26px 29px;
   }
 }
 
-.dignities__item--replace {
+.item-replace {
   &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 25px;
+    height: 30px;
     background-image: url("../../images/dignities/icon-eat.svg");
-    background-repeat: no-repeat;
     background-size: 25px 30px;
   }
 }
 
-.dignities__item--changes {
+.item-changes {
   &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
     background-image: url("../../images/dignities/icon-watch.svg");
-    background-repeat: no-repeat;
     background-size: 26px 31px;
+    width: 26px;
+    height: 31px;
   }
 }
-

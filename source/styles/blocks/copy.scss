@@ -1,13 +1,33 @@
 .copy {
+  width: 280px;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  vertical-align: middle;
 }
 
 .copy__link {
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
+  fill: $dark-grey;
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    fill: $basik-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copy__text {
+  display: block;
   color: $dark-grey;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
