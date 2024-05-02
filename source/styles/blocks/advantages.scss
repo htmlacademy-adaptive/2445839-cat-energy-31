@@ -14,11 +14,11 @@
   padding: 30px 20px 18px;
   background-color: $background-grey;
   margin-bottom: 20px;
+
+  &--skinny {}
+
+  &--full {}
 }
-
-.advantages__item--skinny {}
-
-.advantages__item--full {}
 
 .advantages__title {
   font-size: 24px;
@@ -118,15 +118,21 @@
     background-position: center;
   }
 
-  &:hover::before,
-  &:focus-visible::before {
+  &:not([href])::before {
+    fill: $bg-card-color;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &[href]:hover::before,
+  &[href]:focus-visible::before {
     width: 32px;
     background-size: 32px 15px;
     right: 0;
   }
 
-  &:active,
-  &:active::before {
+  &[href]:active,
+  &[href]:active::before {
     opacity: 0.3;
   }
 }

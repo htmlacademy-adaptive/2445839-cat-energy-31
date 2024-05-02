@@ -19,9 +19,29 @@
 
 .catalog__link-card {
   text-decoration: none;
+
+  &:not([href]) {
+    fill: $bg-card-color;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &[href]:hover .catalog__icon,
+  &[href]:focus-visible .catalog__icon {
+    opacity: 0.7;
+    outline: 2px solid $basik-green;
+  }
+
+  &[href]:active .catalog__icon {
+    opacity: 0.5;
+  }
 }
 
-.catalog__image-wrapper {}
+.catalog__icon {
+  width: 140px;
+  height: 107px;
+align-items: center;
+}
 
 .catalog__description {}
 

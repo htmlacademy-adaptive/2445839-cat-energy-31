@@ -20,16 +20,22 @@
   width: 28px;
   height: 22px;
   display: block;
-  fill: $bg-social;
+  mask-position: center;
+  mask-repeat: no-repeat;
 
-  &:hover,
-  &:focus-visible,
-  &:active {
+  &:not([href]) svg {
+    fill: $bg-card-color;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &[href]:hover svg,
+  &[href]:focus-visible svg,
+  &[href]:active svg {
     fill: $basik-green;
   }
 
-  &:active {
+  &:active svg {
     opacity: 0.3;
   }
 }
-
