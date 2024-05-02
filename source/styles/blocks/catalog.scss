@@ -1,7 +1,9 @@
 .catalog {}
 
 .catalog__title {
-  font-size: 36px;
+  font-family: $primary-font;
+  flex-wrap: wrap;
+  font-size: $title-h1;
   line-height: 36px;
   color: $bg-color-dark;
   margin: 0;
@@ -15,10 +17,13 @@
 
 .catalog__item {}
 
-.catalog__wrapper {}
+.catalog__wrapper {
+  display: flex;
+}
 
 .catalog__link-card {
   text-decoration: none;
+  display: block;
 
   &:not([href]) {
     fill: $bg-card-color;
@@ -26,38 +31,39 @@
     opacity: 0.3;
   }
 
+  &[href]:hover,
+  &[href]:focus-visible,
   &[href]:hover .catalog__icon,
   &[href]:focus-visible .catalog__icon {
     opacity: 0.7;
-    outline: 2px solid $basik-green;
   }
 
+  &[href]:active,
   &[href]:active .catalog__icon {
     opacity: 0.5;
   }
 }
 
-.catalog__icon {
-  width: 140px;
-  height: 107px;
-align-items: center;
-}
+.catalog__icon {}
 
 .catalog__description {}
 
 .catalog__heading {
-  font-size: 16px;
+  font-family: $primary-font;
+  font-size: $title-h4;
   line-height: 20px;
   margin: 0;
   color: $bg-card-color;
   text-transform: uppercase;
+  flex-wrap: wrap;
 }
 
 .catalog__container {
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
+  font-family: $secondary-font;
+  font-size: $text-size;
   line-height: 16px;
   color: $dark-grey;
+  flex-wrap: wrap;
 }
 
 .catalog__desc {}
@@ -65,17 +71,20 @@ align-items: center;
 .catalog__price {}
 
 .catalog__subject {
-  font-size: 16px;
+  font-family: $primary-font;
+  font-size: $title-h4;
   line-height: 20px;
   text-transform: uppercase;
   color: $bg-color;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .catalog__text {
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
+  font-family: $secondary-font;
+  font-size: $text-size;
   line-height: 16px;
   color: $dark-grey;
   margin: 0;
+  flex-wrap: wrap;
 }

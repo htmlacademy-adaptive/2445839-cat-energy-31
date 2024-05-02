@@ -1,12 +1,14 @@
 .dignities {}
 
 .dignities__title {
-  font-size: 36px;
+  font-family: $primary-font;
+  font-size: $title-h1;
   line-height: 40px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 40px;
   color: $bg-color-dark;
+  flex-wrap: wrap;
 }
 
 .dignities__list {
@@ -32,7 +34,6 @@
     width: 60px;
     height: 60px;
     background-color: $basik-green;
-    z-index: 0;
   }
 
   @media (min-width: 768px) {
@@ -70,11 +71,11 @@
 
 .dignities__text {
   width: 200px;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-family: $secondary-font;
+  font-size: $title-h3;
   line-height: 18px;
-  text-align: left;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .item-nutrients {
