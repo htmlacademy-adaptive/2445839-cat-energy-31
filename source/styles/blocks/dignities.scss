@@ -1,11 +1,14 @@
 .dignities {}
 
 .dignities__title {
-  font-size: 36px;
+  font-family: $primary-font;
+  font-size: $title-h1;
   line-height: 40px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 40px;
   color: $bg-color-dark;
+  flex-wrap: wrap;
 }
 
 .dignities__list {
@@ -17,32 +20,87 @@
 
 .dignities__item {
   counter-increment: example 1;
+  padding-left: 80px;
+  margin-bottom: 24px;
+  position: relative;
+  display: flex;
 
-
-  &::marker {
-    content: counters(example, ".");
-  }
 
   &::before {
+    content: "";
     position: absolute;
-    content: counters(example, ".");
-    font-size: 30px;
-    line-height: 30px;
-    color: $background-grey;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basik-green;
+  }
+
+  @media (min-width: 768px) {
+    &::after {
+      position: absolute;
+      right: 50px;
+      top: 20px;
+      content: counters(example, ".");
+      font-size: 30px;
+      line-height: 30px;
+      color: $background-grey;
+    }
+  }
+}
+
+.dignities-offer {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+  }
+}
+
+.item-food {
+  &::after {
+    width: 24px;
+    height: 28px;
+    background-image: url("../../images/dignities/icon-leaf.svg");
+    background-size: 24px 28px;
   }
 }
 
 .dignities__text {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
+  width: 200px;
+  font-family: $secondary-font;
+  font-size: $title-h3;
   line-height: 18px;
-  text-align: left;
   margin: 0;
+  flex-wrap: wrap;
 }
 
-.dignities__item--nutrients {}
+.item-nutrients {
+  &::after {
+    width: 26px;
+    height: 29px;
+    background-image: url("../../images/dignities/icon-powder.svg");
+    background-size: 26px 29px;
+  }
+}
 
-.dignities__item--replace {}
+.item-replace {
+  &::after {
+    width: 25px;
+    height: 30px;
+    background-image: url("../../images/dignities/icon-eat.svg");
+    background-size: 25px 30px;
+  }
+}
 
-.dignities__item--changes {}
-
+.item-changes {
+  &::after {
+    background-image: url("../../images/dignities/icon-watch.svg");
+    background-size: 26px 31px;
+    width: 26px;
+    height: 31px;
+  }
+}

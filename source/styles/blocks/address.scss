@@ -9,23 +9,32 @@
 }
 
 .address__text {
-  font-size: 16px;
+  font-family: $primary-font;
+  font-size: $title-h4;
   line-height: 20px;
   text-transform: uppercase;
   color: $bg-color;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .address-info {}
 
 .address-info__text {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-family: $secondary-font;
+  font-size: $title-h3;
+  color: $dark-grey;
   line-height: 20px;
   font-style: normal;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .address-info__desc {
+  font-family: $secondary-font;
+  font-size: $title-h3;
+  color: $dark-grey;
+  line-height: 20px;
   display: block;
+  flex-wrap: wrap;
 }

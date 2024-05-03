@@ -1,20 +1,23 @@
-.offer {
-  color: $bg-color-dark;
-}
+.offer {}
 
 .offer__wrapper {}
 
 .offer__title {
-  font-size: 36px;
+  font-family: $primary-font;
+  font-size: $title-h1;
+  color: $bg-color-dark;
   line-height: 36px;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .offer__text {
-  font-size: 14px;
+  font-family: $primary-font;
+  font-size: $title-h3;
   line-height: 14px;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .offer__images-wrapper {}

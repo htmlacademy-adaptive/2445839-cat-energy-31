@@ -1,6 +1,41 @@
-.social {}
+.social {
+  width: 160px;
+  min-height: 22px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 24px;
+  fill: $bg-social;
+}
 
-.social__item {}
+.social__item {
+  text-align: center;
+}
 
-.social__link {}
+.social__link {
+  width: 28px;
+  height: 22px;
+  display: block;
+  mask-position: center;
+  mask-repeat: no-repeat;
 
+  &:not([href]) svg {
+    fill: $bg-card-color;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &[href]:hover svg,
+  &[href]:focus-visible svg,
+  &[href]:active svg {
+    fill: $basik-green;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
