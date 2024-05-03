@@ -44,7 +44,20 @@
   flex-wrap: wrap;
 }
 
-.additional__case {}
+.additional__case {
+  width: 280px;
+  background-image: url("images/additional/case-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 280px auto;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("images/additional/case-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desctop-width) {
+    background-image: url("source/images/additional/case-desctop@1x.jpg");
+  }
+}
 
 .additional__case-text {
   font-family: $secondary-font;
