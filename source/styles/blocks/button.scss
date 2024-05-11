@@ -1,6 +1,6 @@
 .button {
   font-family: $primary-font;
-  font-size: $title-h4;
+  font-size: $title-xs;
   line-height: 20px;
   text-align: center;
   color: $bg-text-white;
@@ -13,7 +13,6 @@
   border: none;
   cursor: pointer;
   padding: 10px 0;
-  flex-wrap: wrap;
 
   &:disabled {
     fill: $bg-card-color;
@@ -48,7 +47,10 @@
     }
   }
 
-  &--secondary {}
+  &--position {
+    position: absolute;
+  }
+  // &--secondary {}
 
-  &--big {}
+  // &--big {}
 }

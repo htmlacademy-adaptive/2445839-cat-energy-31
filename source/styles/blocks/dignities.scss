@@ -1,8 +1,11 @@
-.dignities {}
+.dignities {
+  margin-bottom: 49px;
+}
 
 .dignities__title {
   font-family: $primary-font;
-  font-size: $title-h1;
+  font-size: $title-x1;
+  font-weight: 400;
   line-height: 40px;
   text-transform: uppercase;
   margin: 0;
@@ -21,10 +24,9 @@
 .dignities__item {
   counter-increment: example 1;
   padding-left: 80px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   position: relative;
   display: flex;
-
 
   &::before {
     content: "";
@@ -47,60 +49,61 @@
       color: $background-grey;
     }
   }
-}
 
-.dignities-offer {
-  &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background-repeat: no-repeat;
-    background-size: 30px 32px;
+  &--offer {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-repeat: no-repeat;
+      background-size: 30px 32px;
+    }
   }
-}
 
-.item-food {
-  &::after {
-    width: 24px;
-    height: 28px;
-    background-image: url("../../images/dignities/icon-leaf.svg");
-    background-size: 24px 28px;
+  &--food {
+    &::after {
+      width: 24px;
+      height: 28px;
+      background-image: url("../../icons/dignities/icon-leaf.svg");
+      background-size: 24px 28px;
+    }
+  }
+
+  &--nutrients {
+    &::after {
+      width: 26px;
+      height: 29px;
+      background-image: url("../../icons/dignities/icon-powder.svg");
+      background-size: 26px 29px;
+    }
+  }
+
+  &--replace {
+    &::after {
+      width: 25px;
+      height: 30px;
+      background-image: url("../../icons/dignities/icon-eat.svg");
+      background-size: 25px 30px;
+    }
+  }
+
+  &--changes {
+    &::after {
+      background-image: url("../../icons/dignities/icon-watch.svg");
+      background-size: 26px 31px;
+      width: 26px;
+      height: 31px;
+    }
   }
 }
 
 .dignities__text {
   width: 200px;
   font-family: $secondary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   line-height: 18px;
+  padding: 2px 0 4px;
   margin: 0;
   flex-wrap: wrap;
-}
-
-.item-nutrients {
-  &::after {
-    width: 26px;
-    height: 29px;
-    background-image: url("../../images/dignities/icon-powder.svg");
-    background-size: 26px 29px;
-  }
-}
-
-.item-replace {
-  &::after {
-    width: 25px;
-    height: 30px;
-    background-image: url("../../images/dignities/icon-eat.svg");
-    background-size: 25px 30px;
-  }
-}
-
-.item-changes {
-  &::after {
-    background-image: url("../../images/dignities/icon-watch.svg");
-    background-size: 26px 31px;
-    width: 26px;
-    height: 31px;
-  }
 }

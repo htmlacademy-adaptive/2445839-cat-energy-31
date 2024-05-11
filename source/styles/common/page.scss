@@ -1,3 +1,14 @@
+.page {
+  height: 100%;
+}
+
 .page__body {
-  background-color: #ffffff;
+  font-weight: 400;
+  background-color: $bg-text-white;
+  min-height: 100%;
+  margin: 0;
+  font-family: "Lato", "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  color: $dark-grey;
+  align-content: center;
 }

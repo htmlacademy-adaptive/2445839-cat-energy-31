@@ -3,8 +3,13 @@
   font-size: $title-size;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: $basik-green;
+  background-color: $bg-text-white;
   flex-wrap: wrap;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .sate__list {
@@ -12,17 +17,34 @@
   margin: 0;
   list-style-type: none;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.sate__item {}
+.sate__item {
+  border-top: 1px solid $bg-line;
 
-.sate__item-current{}
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+    margin-right: 33px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 
 .sate__link {
-  color: $bg-text-white;
+  color: $bg-color-dark;
   text-decoration: none;
   display: block;
   flex-wrap: wrap;
+  padding: 22px 0 24px;
+  text-align: center;
 
   &:not([href]) {
     fill: $bg-card-color;
@@ -30,14 +52,35 @@
     opacity: 0.3;
   }
 
-  &[href]:hover .copy-icon,
-  &[href]:focus-visible .copy-icon,
-  &[href]:active .copy-icon {
+  &[href]:hover,
+  &[href]:focus-visible,
+  &[href]:active {
     fill: $basik-green;
   }
 
-  &[href]:active,
-  &[href]:active .copy-icon {
+  &[href]:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 0 12px;
+  }
+}
+
+.sate__item-current {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+
+    &::before {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: $basik-green;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   }
 }

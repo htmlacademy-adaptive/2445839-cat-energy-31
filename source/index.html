@@ -19,33 +19,37 @@
   <!-- шапка сайта -->
   <div class="background">
     <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <a class="logo-link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
-            <div class="logo-icon">
-              <picture>
-                <source media="(min-width:1200px)" width="70" height="59" srcset="images/icons/logo-desktop.svg" type="image/svg+xml">
-                <source media="(min-width:768px)" width="60" height="50" srcset="images/icons/logo-tablet.svg" type="image/svg+xml">
-                <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип «Супер котик».">
-              </picture>
+      <div class="main-header__wrapper">
+        <div class="container">
+          <nav class="main-nav">
+            <div class="logo">
+              <a class="logo__link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
+                <div class="logo__icon">
+                  <picture>
+                    <source media="(min-width:1200px)" width="70" height="59" srcset="images/icons/logo-desktop.svg" type="image/svg+xml">
+                    <source media="(min-width:768px)" width="60" height="50" srcset="images/icons/logo-tablet.svg" type="image/svg+xml">
+                    <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип «Супер котик».">
+                  </picture>
+                </div>
+                <svg class="logo__icon logo__icon--name" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 128 24">
+                  <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
+                </svg>
+              </a>
+              <button class="main-nav__toggle main-nav__toggle--open" type="button">
+                <!-- main-nav__toggle--close Включает крестик -->
+                <!-- main-nav__toggle--open включает бургер -->
+                <span class="visually-hidden">Открывает меню навигации.</span>
+              </button>
             </div>
-            <svg class="logo-icon logo-name" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24">
-              <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
-            </svg>
-          </a>
+            <div class="sate">
+              <ul class="sate__list">
+                <li class="sate__item sate__item-current"><a class="sate__link" href="#">Главная</a></li>
+                <li class="sate__item"><a class="sate__link" href="catalog.html">Каталог продукции</a></li>
+                <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
-            <span class="visually-hidden">Открывает меню навигации.</span>
-          </button>
-          <div class="sate">
-            <ul class="sate__list">
-              <li class="sate__item sate__item-current"><a class="sate__link" href="#">Главная</a></li>
-              <li class="sate__item"><a class="sate__link" href="catalog.html">Каталог продукции</a></li>
-              <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
-            </ul>
-          </div>
-        </nav>
       </div>
     </header>
   </div>
@@ -57,15 +61,15 @@
           <h1 class="offer__title">Функциональное
             питание для котов</h1>
           <p class="offer__text">Занялся собой? Займись котом!</p>
-          <a class="button button--secondary" href="#">Подобрать программу</a>
+          <a class="offer__link button button--secondary" href="#">Подобрать программу</a>
         </div>
-        <p class="offer__images-wrapper">
+        <div class="offer__images-wrapper">
           <picture>
             <source media="(min-width:1200px)" width="552" height="499" type="image/png" srcset="images/offer/index-can-desktop@1x.png, images/offer/index-can-desktop@2x.png 2x">
             <source media="(min-width:768px)" width="709" height="609" srcset="images/offer/index-can-tablet@1x.png, images/offer/index-can-tablet@2x.png 2x" type="image/png">
             <img src="images/offer/index-can-mobile@1x.png" width="280" height="270" alt="Питание «Кэт энерджи» с курицей объем 500г." srcset="images/offer/index-can-mobile@2x.png 2x">
           </picture>
-        </p>
+        </div>
       </div>
     </section>
     <!-- Преимущество питания «Кэт энерджи». -->
@@ -92,22 +96,22 @@
         <h2 class="visually-hidden">Достоинство нашей продукции.</h2>
         <h3 class="dignities__title">Как это работает</h3>
         <ol class="dignities__list">
-          <li class="dignities__item dignities-offer item-food">
+          <li class="dignities__item dignities__item--offer dignities__item--food">
             <p class="dignities__text">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </li>
-          <li class="dignities__item dignities-offer item-nutrients">
+          <li class="dignities__item dignities__item--offer dignities__item--nutrients">
             <p class="dignities__text">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
           </li>
-          <li class="dignities__item dignities-offer item-replace">
+          <li class="dignities__item dignities__item--offer dignities__item--replace">
             <p class="dignities__text">Замените один-два приема
               обычной еды на наше
               функциональное питание.</p>
           </li>
-          <li class="dignities__item dignities-offer item-changes">
+          <li class="dignities__item dignities__item--offer dignities__item--changes">
             <p class="dignities__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ol>
@@ -139,32 +143,29 @@
           <h2 class="visually-hidden">Слайдер</h2>
           <ul class="slider__list slider__images">
             <li class="slider__item">
-              <p class="slider__wrapper-images">
+              <div class="slider__wrapper-images">
                 <picture>
                   <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/slider/slider1-desktop@1x.png, images/slider/slider1-desktop@2x.png 2x">
                   <img src="images/slider/slider1-mobile@1x.png" width="280" height="256" alt="Первый фрагмент: «Толстый кот»." srcset="images/slider/slider1-mobile@2x.png 2x">
                 </picture>
-              </p>
+              </div>
             </li>
             <li class="slider__item">
-              <p class="slider__wrapper-images">
+              <div class="slider__wrapper-images">
                 <picture>
                   <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/slider/slider2-desktop@1x.png, images/slider/slider2-desktop@2x.png 2x">
                   <img src="images/slider/slider2-mobile@1x.png" width="280" height="256" alt="Второй фрагмент «Худой кот»." srcset="images/slider/slider2-mobile@2x.png 2x">
                 </picture>
-              </p>
+              </div>
             </li>
           </ul>
         </div>
-        <div class="slider__container slider__toggles">
-          <button class="slider__toggle slider__toggle--back" type="button">
-            <span class="visually-hidden">Назад</span>
-          </button>
-          <button class="slider__toggle slider__toggle--forward" type="button">
-            <span class="visually-hidden">Вперед</span>
-          </button>
-        </div>
+        <!-- <div class="slider__container slider__toggles"> -->
+        <button class="slider__toggle slider__toggle--forward" type="button">
+          <span class="visually-hidden">Вперед</span>
+        </button>
       </div>
+      <!-- </div> -->
     </section>
   </main>
   <!-- футер -->
@@ -174,14 +175,14 @@
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="address__map">
         <picture>
-          <source media="(min-width:1200px)" width="1440" height="400" type="image/jpg" srcset="images/footer/location/location-desktop@1x.jpg, images/footer/location/location-desktop@2x.jpg 2x">
-          <source media="(min-width:768px)" width="768" height="400" type="image/jpg" srcset="images/footer/location/location-tablet@1x.jpg, images/footer/location/location-tablet@2x.jpg 2x">
-          <img src="images/footer/location/location-mobile@1x.jpg" width="320" height="362" alt="Местоположение на карте нашего магазина «Кэт энерджи»." srcset="images/footer/location/location-mobile@2x.jpg 2x">
+          <source media="(min-width:1200px)" width="1440" height="400" type="image/jpg" srcset="images/location/location-desktop@1x.jpg, images/location/location-desktop@2x.jpg 2x">
+          <source media="(min-width:768px)" width="768" height="400" type="image/jpg" srcset="images/location/location-tablet@1x.jpg, images/location/location-tablet@2x.jpg 2x">
+          <img src="images/location/location-mobile@1x.jpg" width="320" height="362" alt="Местоположение на карте нашего магазина «Кэт энерджи»." srcset="images/location/location-mobile@2x.jpg 2x">
         </picture>
       </div>
       <div class="container">
         <div class="address__wrapper">
-          <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__text">Приглашаем <br>к сотрудничеству дилеров!</p>
           <address class="address-info">
             <p class="address-info__text">ул. Большая Конюшенная, д. 19/8 <span class="address-info__desc">Санкт-Петербург</span></p>
           </address>
@@ -191,39 +192,29 @@
     <section class="main-footer__social">
       <div class="container">
         <h2 class="visually-hidden">Социальные сети подвала.</h2>
-        <a class="logo-link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
-          <svg class="logo-icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24">
-            <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
-          </svg>
-        </a>
+        <div class="name-logo">
+          <a class="name-logo__link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
+            <svg class="name-logo__icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24">
+              <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
+            </svg>
+          </a>
+        </div>
         <ul class="social">
           <li class="social__item">
-            <a class="social__link social-vkontakte" aria-label="Вконтакте" href="#">
-              <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="27" height="17" viewBox="0 0 27 17">
-                <use href="icons/stack.svg#social_vkontakte"></use>
-              </svg>
+            <a class="social__link social__link--vkontakte" aria-label="Вконтакте" href="#">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social-youtube" aria-label="Ютуб" href="#">
-              <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19">
-                <use href="icons/stack.svg#social_youtube"></use>
-              </svg>
+            <a class="social__link social__link--youtube" aria-label="Ютуб" href="#">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social-telegram" aria-label="Телеграмм" href="#">
-              <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-                <use href="icons/stack.svg#social_telegram"></use>
-              </svg>
+            <a class="social__link social__link--telegram" aria-label="Телеграмм" href="#">
             </a>
           </li>
         </ul>
         <div class="copy">
-          <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт компании «HTML Academy»"><span class="copy__text">HTML Academy</span>
-            <svg class="copy-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
-              <use href="icons/stack.svg#copy_logo-html"></use>
-            </svg></a>
+          <a class="copy__link copy__link--icon" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт компании «HTML Academy»"><span class="copy__text">HTML Academy</span></a>
         </div>
       </div>
     </section>

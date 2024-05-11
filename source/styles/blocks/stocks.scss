@@ -2,11 +2,11 @@
   color: $bg-color-dark;
 }
 
-.stocks__wrapper {}
+// .stocks__wrapper {}
 
 .stocks__title {
   font-family: $primary-font;
-  font-size: $title-h2;
+  font-size: $title-mb;
   line-height: 24px;
   margin: 0;
   flex-wrap: wrap;
@@ -14,17 +14,17 @@
 
 .stocks__text {
   font-family: $primary-font;
-  font-size: $title-h4;
+  font-size: $title-xs;
   line-height: 24px;
   margin: 0;
   flex-wrap: wrap;
 }
 
-.stocks__form {}
+// .stocks__form {}
 
-.stocks__container {}
+// .stocks__container {}
 
-.stocks__label {}
+// .stocks__label {}
 
 .stocks__input {
   font-family: $primary-font;

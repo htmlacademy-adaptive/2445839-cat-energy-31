@@ -1,18 +1,22 @@
-.main-nav {}
+.main-nav {
+  align-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .main-nav__toggle {
-  width: 24px;
-  height: 24px;
   background-color: transparent;
-  background-image: url("../../icons/stack.svg#logotip_burger");
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
+  mask-repeat: no-repeat;
+  mask-position: center;
   border: none;
   cursor: pointer;
+  padding: 0;
 
   &:disabled {
-    fill: $bg-card-color;
+    background-color: $bg-card-color;
     cursor: default;
     opacity: 0.3;
   }
@@ -30,5 +34,23 @@
     display: none;
   }
 
-  &--close {}
+  &--open::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    mask-image: url("../../icons/logotypes/burger.svg");
+    mask-size: 24px;
+    background-color: $bg-color-dark;
+    display: block;
+  }
+
+  &--close::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    mask-image: url("../../icons/logotypes/Logo_cross.svg");
+    mask-size: 18px;
+    background-color: $bg-color-dark;
+  }
 }

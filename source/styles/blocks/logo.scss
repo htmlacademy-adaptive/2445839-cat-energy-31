@@ -1,25 +1,47 @@
 .logo {
-  width: 190px;
+  width: 100%;
   align-items: center;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    padding: 0;
+  }
 }
 
-.logo-link {
+.logo__link {
+  height: 38px;
   display: flex;
   align-items: center;
 
-  &:not([href]) .logo-icon {
+
+  &:not([href]) .logo__icon {
     color: $bg-card-color;
     cursor: default;
     opacity: 0.5;
   }
 
-  &[href]:hover .logo-icon,
-  &[href]:focus-visible .logo-icon {
+  &[href]:hover .logo__icon,
+  &[href]:focus-visible .logo__icon {
     opacity: 0.8;
   }
 
-  &[href]:active .logo-icon {
+  &[href]:active .logo__icon {
     opacity: 0.6;
   }
+
+  // @media (min-width: $tablet-width) {
+  //   width: 200px;
+  //   padding: 0;
+  // }
 }
+
+.logo__icon--name {
+  margin: 0 65px 0 56px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 13px;
+  }
+}
+

@@ -1,8 +1,8 @@
-.additional {}
+// .additional {}
 
 .additional__title {
   font-size: $primary-font;
-  line-height: $title-h2;
+  line-height: $title-mb;
   color: $bg-color-dark;
   margin: 0;
   flex-wrap: wrap;
@@ -14,11 +14,11 @@
   list-style-type: none;
 }
 
-.additional__item {}
+// .additional__item {}
 
 .additional__heading {
   font-family: $primary-font;
-  font-size: $title-h4;
+  font-size: $title-xs;
   line-height: 16px;
   text-transform: uppercase;
   color: $bg-card-color;
@@ -26,11 +26,11 @@
   flex-wrap: wrap;
 }
 
-.additional__description {}
+// .additional__description {}
 
 .additional__desc {
   font-family: $secondary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   line-height: 14px;
   color: $dark-grey;
   flex-wrap: wrap;
@@ -38,33 +38,8 @@
 
 .additional__price {
   font-family: $secondary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   line-height: 14px;
   color: $dark-grey;
-  flex-wrap: wrap;
-}
-
-.additional__case {
-  width: 280px;
-  background-image: url("images/additional/case-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 280px auto;
-
-  @media (min-width: $tablet-width) {
-    background-image: url("images/additional/case-tablet@1x.jpg");
-  }
-
-  @media (min-width: $desctop-width) {
-    background-image: url("source/images/additional/case-desctop@1x.jpg");
-  }
-}
-
-.additional__case-text {
-  font-family: $secondary-font;
-  font-size: $title-h4;
-  line-height: 20px;
-  color: $bg-text-white;
-  background-color: $basik-green;
-  padding: 0;
   flex-wrap: wrap;
 }

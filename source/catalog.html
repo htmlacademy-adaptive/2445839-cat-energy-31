@@ -20,14 +20,12 @@
   <header class="main-header">
     <div class="container">
       <div class="logo">
-        <a class="logo-link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
+        <a class="logo__link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
           <div class="logo-icon">
             <picture>
-              <picture>
-                <source media="(min-width:1200px)" width="70" height="59" srcset="images/icons/logo-desktop.svg" type="image/svg+xml">
-                <source media="(min-width:768px)" width="60" height="50" srcset="images/icons/logo-tablet.svg" type="image/svg+xml">
-                <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип «Супер котик».">
-              </picture>
+              <source media="(min-width:1200px)" width="70" height="59" srcset="images/icons/logo-desktop.svg" type="image/svg+xml">
+              <source media="(min-width:768px)" width="60" height="50" srcset="images/icons/logo-tablet.svg" type="image/svg+xml">
+              <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип «Супер котик».">
             </picture>
           </div>
           <svg class="logo-icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24">
@@ -80,7 +78,7 @@
                 </dl>
               </div>
             </div>
-            <button class="button button--secondary" type="submit">Заказать</button>
+            <a class="button button--secondary" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -108,7 +106,7 @@
                 </dl>
               </div>
             </div>
-            <button class="button button--secondary" type="submit">Заказать</button>
+            <a class="button button--secondary" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -135,7 +133,7 @@
                 </dl>
               </div>
             </div>
-            <button class="button button--secondary" type="submit">Заказать</button>
+            <a class="button button--secondary" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -163,7 +161,7 @@
                 </dl>
               </div>
             </div>
-            <button class="button button--secondary" type="submit">Заказать</button>
+            <a class="button button--secondary" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -172,7 +170,7 @@
                   <picture>
                     <source media="(min-width:768px)" width="161" height="171" type="image/png" srcset="images/catalog/buckwheat-500-desktop@1x.png, images/catalog/buckwheat-500-desktop@2x 2x">
                     <img src="images/catalog/buckwheat-500-mobile@1x.png" width="68" height="78" alt="Cat Energy
-                  PRO с гречкой 500 г." srcset="images/catalog/buckwheat-500-mobile@2x 2x">
+                  PRO с гречкой 500 г." srcset="images/catalog/buckwheat-500-mobile@2x.png 2x">
                   </picture>
                 </div>
               </a>
@@ -190,7 +188,7 @@
                 </dl>
               </div>
             </div>
-            <button class="button button--secondary" type="submit">Заказать</button>
+            <a class="button button--secondary" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -218,7 +216,7 @@
                 </dl>
               </div>
             </div>
-            <button class="button button--secondary" type="submit">Заказать</button>
+            <a class="button button--secondary" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -227,7 +225,7 @@
                   <picture>
                     <source media="(min-width:768px)" width="161" height="171" type="image/png" srcset="images/catalog/rice-desktop@1x.png, images/catalog/rice-desktop@2x 2x">
                     <img src="images/catalog/rice-mobile@1x.png" width="68" height="78" alt="Cat Energy
-                  PRO с рисом 500 г." srcset="images/catalog/rice-mobile@2x 2x">
+                  PRO с рисом 500 г." srcset="images/catalog/rice-mobile@2x.png 2x">
                   </picture>
                 </div>
               </a>
@@ -245,7 +243,7 @@
                 </dl>
               </div>
             </div>
-            <button class="button button--secondary" type="submit">Заказать</button>
+            <a class="button button--secondary" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__description">
@@ -268,7 +266,7 @@
               <dt class="additional__desc">1 упаковка (100 г)</dt>
               <dd class="additional__price">200 <span>₽</span></dd>
             </dl>
-            <button class="button button--big" type="submit">Заказать</button>
+            <a class="button button--secondary" href="#">Заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="additional__heading">Питьевая вода</h3>
@@ -276,7 +274,7 @@
               <dt class="additional__desc">5 литров</dt>
               <dd class="additional__price">50<span>₽</span></dd>
             </dl>
-            <button class="button button--big" type="submit">Заказать</button>
+            <a class="button button--big" href="#">Заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="additional__title">Молоко</h3>
@@ -284,7 +282,7 @@
               <dt class="additional__desc">1 литр</dt>
               <dd class="additional__price">100<span>₽</span></dd>
             </dl>
-            <button class="button button--big" type="submit">Заказать</button>
+            <a class="button button--big" href="#">Заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="additional__heading">Витамины</h3>
@@ -292,11 +290,12 @@
               <dt class="additional__desc">1 упаковка (30 г)</dt>
               <dd class="additional__price">300<span>₽</span></dd>
             </dl>
-            <button class="button button--big" type="submit">Заказать</button>
+            <a class="button button--big" href="#">Заказать</a>
           </li>
         </ul>
-        <div class="additional__case">
-          <p class="additional__case-text">Закажите все и получите чехол для кота в подарок!</p>
+        <!-- подарок -->
+        <div class="gift">
+          <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -307,13 +306,9 @@
           <h2 class="stocks__title">Акции и новинки</h2>
           <p class="stocks__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
           <form class="stocks__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="stocks__container">
-              <legend class="visually-hidden">Укажите ваш email</legend>
-              <label class="stocks__label" for="stocks-input">
-                <input class="stocks__input" id="stocks-input" type="text" name="email" placeholder="кuklachev@gmail.com" required>
-              </label>
-              <button class="button button--big" type="submit">Подписаться</button>
-            </fieldset>
+            <label class="visually-hidden" for="stocks-input">Укажите ваш email</label>
+            <input class="stocks__input" id="stocks-input" type="text" name="email" placeholder="кuklachev@gmail.com" required>
+            <button class="button button--big" type="submit">Подписаться</button>
           </form>
         </div>
       </div>
@@ -324,13 +319,6 @@
     <!-- наш адрес -->
     <section class="address">
       <h2 class="visually-hidden">Наш адрес</h2>
-      <p class="address__map">
-        <picture>
-          <source media="(min-width:1200px)" width="1440" height="400" type="image/jpg" srcset="images/footer/location/location-desktop@1x.jpg, images/footer/location/location-desktop@2x.jpg 2x">
-          <source media="(min-width:768px)" width="768" height="400" type="image/jpg" srcset="images/footer/location/location-tablet@1x.jpg, images/footer/location/location-tablet@2x.jpg 2x">
-          <img src="images/footer/location/location-mobile@1x.jpg" width="320" height="362" alt="Местоположение на карте нашего магазина «Кэт энерджи»." srcset="images/footer/location/location-mobile@2x.jpg 2x">
-        </picture>
-      </p>
       <div class="container">
         <div class="address__wrapper">
           <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
@@ -343,39 +331,29 @@
     <section class="main-footer__social">
       <div class="container">
         <h2 class="visually-hidden">Социальные сети подвала.</h2>
-        <a class="logo-link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
-          <svg class="logo-icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24">
-            <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
-          </svg>
-        </a>
+        <div class="name-logo">
+          <a class="name-logo__link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
+            <svg class="name-logo__icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24">
+              <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
+            </svg>
+          </a>
+        </div>
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" aria-label="Вконтакте" href="#">
-              <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="27" height="17" viewBox="0 0 27 17">
-                <use href="icons/stack.svg#social_vkontakte"></use>
-              </svg>
+            <a class="social__link social__link--vkontakte" aria-label="Вконтакте" href="#">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Ютуб">
-              <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19">
-                <use href="icons/stack.svg#social_youtube"></use>
-              </svg>
+            <a class="social__link social__link--youtube" href="#" aria-label="Ютуб">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" aria-label="Телеграмм" href="#">
-              <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-                <use href="icons/stack.svg#social_telegram"></use>
-              </svg>
+            <a class="social__link social__link--telegram" aria-label="Телеграмм" href="#">
             </a>
           </li>
         </ul>
         <div class="copy">
-          <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт компании «HTML Academy»"><span class="copy__text">HTML Academy</span>
-            <svg class="copy-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
-              <use href="icons/stack.svg#copy_logo-html"></use>
-            </svg></a>
+          <a class="copy__link copy__link--icon" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт компании «HTML Academy»"><span class="copy__text">HTML Academy</span></a>
         </div>
       </div>
     </section>

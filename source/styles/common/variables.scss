@@ -1,26 +1,19 @@
 /* здесь используйте глобальные переменные */
 $bg-color-dark: #000000;
-
 $bg-text-white: #ffffff;
-
 $bg-card-color: #222222;
-
 $bg-color: #111111;
-
 $dark-grey: #444444;
-
 $basik-green: #68b738;
-
 $background-grey: #f2f2f2;
-
 $bg-borders: #d9d9d9;
-
 $bg-social: #666666;
-
 $bg-button: #5eaa2f;
-
 $bg-primary: #ebebeb;
-
+$bg-line: #e6e6e6;
+$bg-grey: #eaeaea;
+$bg-outline: #cdcdcd;
+$bg-opacity: rgba(104, 183, 56, 0.85);
 $bg-opacity-white: rgba(255, 255, 255, 0.3);
 
 // шрифты
@@ -28,13 +21,13 @@ $primary-font: "Oswald", "Aria", sans-serif;
 $secondary-font: "Lato", "Aria", sans-serif;
 
 // font-size
-$title-h1: 36px;
-$title-h2: 24px;
-$title-h3: 14px;
-$title-h4: 16px;
+$title-x1: 36px;
+$title-mb: 24px;
+$title-ms: 14px;
+$title-xs: 16px;
 $title-size: 20px;
 $text-size: 12px;
 
 // размер вьюпорта
 $tablet-width: 768px;
-$desctop-width: 1440px;
+$desktop-width: 1068px;

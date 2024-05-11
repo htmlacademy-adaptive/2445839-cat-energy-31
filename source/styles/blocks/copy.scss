@@ -1,38 +1,58 @@
 .copy {
-  width: 280px;
+  padding-top: 20px;
+  width: 100%;
   font-family: $secondary-font;
-  font-size: $title-h4;
+  font-size: $title-xs;
   line-height: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $bg-borders;
+  }
 }
 
 .copy__link {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   text-decoration: none;
   align-items: center;
-  flex-wrap: wrap;
 
-  &:not([href]) .copy-icon {
-    fill: $bg-card-color;
+  &--icon::before {
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/copy/logo-html.svg");
+    mask-position: right;
+    mask-repeat: no-repeat;
+    background-color: $bg-social;
+    mask-size: 27px 34px;
+    display: block;
+  }
+
+  &:not([href])::before {
+    background-color: $bg-card-color;
     cursor: default;
     opacity: 0.3;
   }
 
-  &[href]:hover .copy-icon,
-  &[href]:focus-visible .copy-icon,
-  &[href]:active .copy-icon {
-    fill: $basik-green;
+  &[href]:hover::before,
+  &[href]:focus-visible::before,
+  &[href]:active::before {
+    background-color: $basik-green;
   }
 
   &[href]:active,
-  &[href]:active .copy-icon {
+  &[href]:active::before {
     opacity: 0.3;
   }
-}
-
-.copy-icon {
-  display: block;
-  fill: $bg-social;
 }
 
 .copy__text {
