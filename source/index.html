@@ -19,37 +19,33 @@
   <!-- шапка сайта -->
   <div class="background">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <div class="container">
-          <nav class="main-nav">
-            <div class="logo">
-              <a class="logo__link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
-                <div class="logo__icon">
-                  <picture>
-                    <source media="(min-width:1200px)" width="70" height="59" srcset="images/icons/logo-desktop.svg" type="image/svg+xml">
-                    <source media="(min-width:768px)" width="60" height="50" srcset="images/icons/logo-tablet.svg" type="image/svg+xml">
-                    <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип «Супер котик».">
-                  </picture>
-                </div>
-                <svg class="logo__icon logo__icon--name" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 128 24">
-                  <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
-                </svg>
-              </a>
-              <button class="main-nav__toggle main-nav__toggle--open" type="button">
-                <!-- main-nav__toggle--close Включает крестик -->
-                <!-- main-nav__toggle--open включает бургер -->
-                <span class="visually-hidden">Открывает меню навигации.</span>
-              </button>
+      <div class="container">
+        <div class="logo">
+          <a class="logo-link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
+            <div class="logo-icon">
+              <picture>
+                <source media="(min-width:1200px)" width="70" height="59" srcset="images/icons/logo-desktop.svg" type="image/svg+xml">
+                <source media="(min-width:768px)" width="60" height="50" srcset="images/icons/logo-tablet.svg" type="image/svg+xml">
+                <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип «Супер котик».">
+              </picture>
             </div>
-            <div class="sate">
-              <ul class="sate__list">
-                <li class="sate__item sate__item-current"><a class="sate__link" href="#">Главная</a></li>
-                <li class="sate__item"><a class="sate__link" href="catalog.html">Каталог продукции</a></li>
-                <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
-              </ul>
-            </div>
-          </nav>
+            <svg class="logo-icon logo-name" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24">
+              <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
+            </svg>
+          </a>
         </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <span class="visually-hidden">Открывает меню навигации.</span>
+          </button>
+          <div class="sate">
+            <ul class="sate__list">
+              <li class="sate__item sate__item-current"><a class="sate__link" href="#">Главная</a></li>
+              <li class="sate__item"><a class="sate__link" href="catalog.html">Каталог продукции</a></li>
+              <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
   </div>
@@ -123,17 +119,19 @@
         <h2 class="visually-hidden">История живого примера о пользе питания «Кэт энерджи».</h2>
         <h3 class="example__title">Живой пример</h3>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__wrapper">
-          <div class="example__achievement">
-            <b class="example__achievement-desc">5 кг</b>
-            <p class="example__achievement-title">снижение веса</p>
+        <div class="example__container">
+          <div class="example__wrapper">
+            <div class="example__achievement">
+              <b class="example__achievement-desc">5 кг</b>
+              <p class="example__achievement-title">снижение веса</p>
+            </div>
+            <div class="example__achievement">
+              <b class="example__achievement-desc">60 дней</b>
+              <p class="example__achievement-title">затрачено времени</p>
+            </div>
           </div>
-          <div class="example__achievement">
-            <b class="example__achievement-desc">60 дней</b>
-            <p class="example__achievement-title">затрачено времени</p>
-          </div>
+          <b class="example__desc">Затраты на питание: <span class="example__price">15 000 руб.</span></b>
         </div>
-        <b class="example__desc">Затраты на питание: <span class="example__price">15 000 руб.</span></b>
       </div>
     </section>
     <!-- слайдер -->
@@ -143,29 +141,32 @@
           <h2 class="visually-hidden">Слайдер</h2>
           <ul class="slider__list slider__images">
             <li class="slider__item">
-              <div class="slider__wrapper-images">
+              <p class="slider__wrapper-images">
                 <picture>
                   <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/slider/slider1-desktop@1x.png, images/slider/slider1-desktop@2x.png 2x">
                   <img src="images/slider/slider1-mobile@1x.png" width="280" height="256" alt="Первый фрагмент: «Толстый кот»." srcset="images/slider/slider1-mobile@2x.png 2x">
                 </picture>
-              </div>
+              </p>
             </li>
             <li class="slider__item">
-              <div class="slider__wrapper-images">
+              <p class="slider__wrapper-images">
                 <picture>
                   <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/slider/slider2-desktop@1x.png, images/slider/slider2-desktop@2x.png 2x">
                   <img src="images/slider/slider2-mobile@1x.png" width="280" height="256" alt="Второй фрагмент «Худой кот»." srcset="images/slider/slider2-mobile@2x.png 2x">
                 </picture>
-              </div>
+              </p>
             </li>
           </ul>
         </div>
-        <!-- <div class="slider__container slider__toggles"> -->
-        <button class="slider__toggle slider__toggle--forward" type="button">
-          <span class="visually-hidden">Вперед</span>
-        </button>
+        <div class="slider__container slider__toggles">
+          <button class="slider__toggle slider__toggle--back" type="button">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="slider__toggle slider__toggle--forward" type="button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
+        </div>
       </div>
-      <!-- </div> -->
     </section>
   </main>
   <!-- футер -->
@@ -175,14 +176,14 @@
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="address__map">
         <picture>
-          <source media="(min-width:1200px)" width="1440" height="400" type="image/jpg" srcset="images/location/location-desktop@1x.jpg, images/location/location-desktop@2x.jpg 2x">
-          <source media="(min-width:768px)" width="768" height="400" type="image/jpg" srcset="images/location/location-tablet@1x.jpg, images/location/location-tablet@2x.jpg 2x">
-          <img src="images/location/location-mobile@1x.jpg" width="320" height="362" alt="Местоположение на карте нашего магазина «Кэт энерджи»." srcset="images/location/location-mobile@2x.jpg 2x">
+          <source media="(min-width:1200px)" width="1440" height="400" type="image/jpg" srcset="images/footer/location/location-desktop@1x.jpg, images/footer/location/location-desktop@2x.jpg 2x">
+          <source media="(min-width:768px)" width="768" height="400" type="image/jpg" srcset="images/footer/location/location-tablet@1x.jpg, images/footer/location/location-tablet@2x.jpg 2x">
+          <img src="images/footer/location/location-mobile@1x.jpg" width="320" height="362" alt="Местоположение на карте нашего магазина «Кэт энерджи»." srcset="images/footer/location/location-mobile@2x.jpg 2x">
         </picture>
       </div>
       <div class="container">
         <div class="address__wrapper">
-          <p class="address__text">Приглашаем <br>к сотрудничеству дилеров!</p>
+          <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
           <address class="address-info">
             <p class="address-info__text">ул. Большая Конюшенная, д. 19/8 <span class="address-info__desc">Санкт-Петербург</span></p>
           </address>
@@ -190,7 +191,7 @@
       </div>
     </section>
     <section class="main-footer__social">
-      <div class="container">
+      <div class="main-footer__wrapper container">
         <h2 class="visually-hidden">Социальные сети подвала.</h2>
         <div class="name-logo">
           <a class="name-logo__link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">

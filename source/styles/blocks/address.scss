@@ -1,19 +1,11 @@
-.address {
-  display: flex;
-  flex-direction: column;
-}
+// .address {}
 
 // .address__container {}
 
-.address__map {
-  order: 2;
-}
+// .address__map {}
 
 .address__wrapper {
-  background-color: $bg-text-white;
-  padding: 26px 0;
-  display: flex;
-  flex-direction: row-reverse;
+  background-color: $background-grey;
 }
 
 .address__text {
@@ -25,15 +17,11 @@
   color: $bg-color;
   margin: 0;
   flex-wrap: wrap;
-  order: 1;
 }
 
-.address-info {
-  width: 140px;
-}
+// .address-info {}
 
 .address-info__text {
-
   font-family: $secondary-font;
   font-weight: inherit;
   font-size: $title-ms;
@@ -42,6 +30,11 @@
   font-style: normal;
   margin: 0;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    flex-direction: column;
+  }
 }
 
 .address-info__desc {
@@ -51,4 +44,9 @@
   line-height: 20px;
   display: block;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: auto;
+    margin-top: 20px;
+  }
 }

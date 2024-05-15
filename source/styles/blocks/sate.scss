@@ -5,11 +5,6 @@
   text-transform: uppercase;
   background-color: $bg-text-white;
   flex-wrap: wrap;
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
 }
 
 .sate__list {

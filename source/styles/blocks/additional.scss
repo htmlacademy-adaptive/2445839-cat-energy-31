@@ -2,10 +2,38 @@
 
 .additional__title {
   font-size: $primary-font;
-  line-height: $title-mb;
+  line-height: $title-h2;
   color: $bg-color-dark;
   margin: 0;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-x3;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $title-heading;
+    line-height: 40px;
+    padding: 0 40px;
+    position: relative;
+  }
+
+  &--heading {
+    z-index: 2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      bottom: 20px;
+      left: 0;
+      background-color: $basik-green;
+      height: 2px;
+      width: 100%;
+      z-index: 0;
+    }
+  }
 }
 
 .additional__list {
@@ -18,7 +46,7 @@
 
 .additional__heading {
   font-family: $primary-font;
-  font-size: $title-xs;
+  font-size: $title-h4;
   line-height: 16px;
   text-transform: uppercase;
   color: $bg-card-color;
