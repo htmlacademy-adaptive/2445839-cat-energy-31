@@ -1,4 +1,8 @@
-// .example {}
+.example {
+  font-weight: inherit;
+  background-color: $bg-grey;
+  padding: 25px 0 20px;
+}
 
 .example__title {
   min-height: 40px;
@@ -9,6 +13,7 @@
   color: $bg-color-dark;
   margin: 0;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .example__text {
@@ -26,16 +31,35 @@
   }
 }
 
-.example__container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-  }
+.example__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 20px;
 }
 
-// .example__wrapper {}
+.example__achievement {
+  padding: 14px 22px 0;
+  position: relative;
+  text-align: center;
 
-// .example__achievement {}
+  &:last-child {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 124px;
+    height: 56px;
+    border: 1px solid $bg-outline;
+    border-radius: 3px;
+  }
+}
 
 .example__achievement-desc {
   font-weight: inherit;
@@ -55,11 +79,16 @@
 }
 
 .example__achievement-title {
+  width: 77px;
+  min-height: 24px;
+  text-align: center;
   font-family: $secondary-font;
   font-size: $text-size;
   background-color: $bg-grey;
   line-height: 12px;
   flex-wrap: wrap;
+  padding: 0 10px;
+  margin: 8px 0 0;
 }
 
 .example__desc {
@@ -71,6 +100,8 @@
   text-transform: uppercase;
   color: $bg-color-dark;
   flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 
 .example__price {

@@ -5,14 +5,16 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 100%;
+    width: auto;
     padding: 0 30px;
+    margin: 0 auto;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .container {
-    width: 1280px;
-    // padding: 0 64px;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .container {
+//     width: 1068px;
+//     padding: 0 64px;
+//     margin: 0 auto;
+//   }
+// }

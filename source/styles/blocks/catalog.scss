@@ -1,4 +1,18 @@
-// .catalog {}
+.catalog {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 27px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 65px 0 74px;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 74px 0 71px;
+  }
+}
 
 .catalog__title {
   font-weight: inherit;
@@ -34,7 +48,10 @@
   }
 }
 
-// .catalog__item {}
+.catalog__item {
+  padding: 25px 0;
+  outline: 1px solid #000000;
+}
 
 .catalog__wrapper {
   display: flex;
