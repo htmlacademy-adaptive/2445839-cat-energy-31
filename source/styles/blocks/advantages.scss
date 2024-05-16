@@ -18,16 +18,42 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: $background-grey;
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
   position: relative;
 
   &:last-child {
     margin-bottom: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+// карточка
+.advantages__item {
+  width: 280px;
+  min-height: 266px;
+  padding: 30px 20px 18px;
+  background-color: $background-grey;
+  position: relative;
+  flex-wrap: wrap;
+
+  // фон
   &::before {
     content: "";
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: $basik-green;
@@ -43,9 +69,9 @@
     @media (min-width: $desktop-width) {
       width: 100px;
       height: 100px;
-      right: auto;
+      top: 47px;
       left: 52px;
-      top: 41px;
+      right: auto;
     }
   }
 
@@ -53,124 +79,13 @@
     width: 100%;
     min-height: 372px;
     padding: 77px 63px 53px 53px;
-    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 41px 61px 55px 52px;
-    align-content: center;
-    margin-bottom: 0;
-    width: 100%;
+    padding: 41px 67px 55px 52px;
   }
-
+// иконка кот 1
   &--skinny {
-    display: inline-block;
-
-    &::after {
-      content: "";
-      width: 36px;
-      height: 50px;
-      position: absolute;
-      left: 30px;
-      top: 22px;
-      background-image: url("../../icons/stack.svg#advantages_cat-slim");
-      background-repeat: no-repeat;
-      background-size: 36px 50px;
-      background-position: left top;
-
-      @media (min-width: $tablet-width) {
-        width: 140px;
-        height: 194px;
-        background-size: 140px 194px;
-        left: auto;
-        top: 81px;
-        right: 92px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 70px;
-        height: 97px;
-        background-size: 70px 97px;
-        right: auto;
-        left: 67px;
-        top: 41px;
-      }
-    }
-  }
-
-  &--full {
-    display: inline-block;
-
-    &::after {
-      content: "";
-      width: 67px;
-      height: 28px;
-      position: absolute;
-      left: 12px;
-      top: 33px;
-      background-image: url("../../icons/stack.svg#advantages_cat2-slim");
-      background-repeat: no-repeat;
-      background-size: 67px 28px;
-      background-position: left center;
-
-      @media (min-width: $tablet-width) {
-        width: 268px;
-        height: 112px;
-        background-size: 268px 112px;
-        left: auto;
-        right: 29px;
-        top: 125px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 134px;
-        height: 56px;
-        background-size: 134px 56px;
-        left: 33px;
-        top: 67px;
-      }
-    }
-  }
-}
-
-.advantages__item {
-  width: 280px;
-  height: 266px;
-  padding: 30px 20px 18px;
-  background-color: $background-grey;
-  margin-bottom: 20px;
-  position: relative;
-  flex-wrap: wrap;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 20px;
-    top: 25px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $basik-green;
-
-    @media (min-width: $tablet-width) {
-      width: 200px;
-      height: 200px;
-      right: 10px;
-      top: 0;
-      left: 0;
-  }
-}
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    min-height: 372px;
-    padding: 77px 63px 53px 53px;
-    margin-bottom: 30px;
-  }
-
-  &--skinny {
-    display: inline-block;
-
   &::after {
     content: "";
     width: 36px;
@@ -184,16 +99,27 @@
     background-position: left top;
 
       @media (min-width: $tablet-width) {
+        top: 81px;
+        right: 93px;
+        left: auto;
         width: 140px;
         height: 194px;
         background-size: 140px 194px;
       }
+
+      @media (min-width: $desktop-width) {
+        top: 41px;
+        left: 67px;
+        right: auto;
+        width: 70px;
+        height: 97px;
+        background-size: 70px 97px;
+      }
     }
   }
 
+  // иконка кот 2
   &--full {
-    display: inline-block;
-
     &::after {
       content: "";
       width: 67px;
@@ -205,6 +131,24 @@
       background-repeat: no-repeat;
       background-size: 67px 28px;
       background-position: left center;
+
+      @media (min-width: $tablet-width) {
+        top: 135px;
+        right: 29px;
+        left: auto;
+        width: 268px;
+        height: 112px;
+        background-size: 268px 112px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 67px;
+        left: 33px;
+        right: auto;
+        width: 134px;
+        height: 56px;
+        background-size: 134px 56px;
+      }
     }
   }
 }
@@ -230,10 +174,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    align-self: center;
+    min-height: 36px;
     padding-top: 30px;
-    margin-bottom: 72px;
-    padding-left: 162px;
+    margin-bottom: 73px;
+    text-align: end;
     align-content: center;
   }
 
@@ -241,7 +185,7 @@
     width: 180px;
 
     @media (min-width: $desktop-width) {
-      width: 328px;
+      width: 326px;
     }
   }
 
@@ -268,6 +212,7 @@
   margin: 0;
   margin-bottom: 38px;
   flex-wrap: wrap;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 340px;
@@ -275,6 +220,12 @@
     line-height: 24px;
     font-size: $title-xs;
     margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    min-height: 72px;
+    margin-bottom: 23px;
   }
 }
 

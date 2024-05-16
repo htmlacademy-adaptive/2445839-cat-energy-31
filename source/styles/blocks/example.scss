@@ -2,6 +2,11 @@
   font-weight: inherit;
   background-color: $bg-grey;
   padding: 25px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 92px 0 99px;
+    background-color: $bg-text-white;
+  }
 }
 
 .example__title {
@@ -14,6 +19,13 @@
   margin: 0;
   flex-wrap: wrap;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-max;
+    line-height: 60px;
+    min-height: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .example__text {
@@ -27,38 +39,41 @@
   @media (min-width: $tablet-width) {
     font-size: $title-xs;
     line-height: 24px;
-    margin-bottom: 55px;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: auto;
+    margin-top: 55px;
+    column-gap: 43px;
   }
 }
 
 .example__wrapper {
-  display: flex;
-  justify-content: space-between;
   gap: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  display: flex;
+
+  // @media (min-width: $tablet-width) {
+
+  // }
 }
 
 .example__achievement {
-  padding: 14px 22px 0;
   position: relative;
   text-align: center;
+  align-content: center;
+  min-width: 124px;
+  min-height: 56px;
+  border: 1px solid $bg-outline;
+  border-radius: 3px;
+  padding: 14px 12px;
 
-  &:last-child {
-    padding-left: 21px;
-    padding-right: 21px;
-  }
+  // @media (min-width: $tablet-width) {
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 124px;
-    height: 56px;
-    border: 1px solid $bg-outline;
-    border-radius: 3px;
-  }
+  // }
 }
 
 .example__achievement-desc {
@@ -71,6 +86,7 @@
   color: $bg-color-dark;
   text-transform: uppercase;
   flex-wrap: wrap;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: $title-x2;
@@ -79,16 +95,25 @@
 }
 
 .example__achievement-title {
-  width: 77px;
+  width: 70%;
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   min-height: 24px;
-  text-align: center;
   font-family: $secondary-font;
   font-size: $text-size;
   background-color: $bg-grey;
   line-height: 12px;
-  flex-wrap: wrap;
   padding: 0 10px;
-  margin: 8px 0 0;
+  margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-ms;
+    line-height: 14px;
+    background-color: $bg-text-white;
+  }
 }
 
 .example__desc {
@@ -102,6 +127,16 @@
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: $title-size;
+    line-height: 20px;
+    min-height: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
 }
 
 .example__price {
@@ -114,8 +149,11 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    line-height: 14px;
+    display: block;
     margin-top: 9px;
     text-align: end;
+    font-size: $title-size;
+    line-height: 20px;
+    min-height: 20px;
   }
 }

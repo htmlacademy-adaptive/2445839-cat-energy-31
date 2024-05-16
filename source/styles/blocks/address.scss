@@ -10,11 +10,6 @@
     width: 100%;
     min-height: 400px;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    min-height: 400px;
-  }
 }
 
 .address__container {
@@ -73,14 +68,15 @@
 }
 
 .address__text {
+  flex-direction: column;
   width: 140px;
+  min-height: 60px;
   font-family: $primary-font;
   font-size: $title-xs;
   line-height: 20px;
   text-transform: uppercase;
   color: $bg-color;
   margin: 0;
-  flex-wrap: wrap;
   order: 1;
 
   @media (min-width: $tablet-width) {

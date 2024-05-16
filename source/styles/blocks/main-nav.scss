@@ -1,7 +1,15 @@
 .main-nav {
+  width: 100%;
   align-content: center;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 174px 436px;
+    gap: 94px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }
