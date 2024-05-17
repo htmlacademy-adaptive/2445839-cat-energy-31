@@ -4,5 +4,20 @@
   padding: 40px 0;
   text-align: center;
   background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 0;
+  }
 }
 
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

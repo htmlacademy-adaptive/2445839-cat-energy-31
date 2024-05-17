@@ -39,13 +39,13 @@
               <!-- main-nav__toggle--open включает бургер -->
               <span class="visually-hidden">Открывает меню навигации.</span>
             </button>
-            <div class="sate">
-              <ul class="sate__list">
-                <li class="sate__item"><a class="sate__link" href="index.html">Главная</a></li>
-                <li class="sate__item sate__item-current"><a class="sate__link" href="#">Каталог продукции</a></li>
-                <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
-              </ul>
-            </div>
+          </div>
+          <div class="sate">
+            <ul class="sate__list">
+              <li class="sate__item"><a class="sate__link" href="index.html">Главная</a></li>
+              <li class="sate__item sate__item-current"><a class="sate__link" href="#">Каталог продукции</a></li>
+              <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -261,9 +261,9 @@
     </section>
     <!-- Дополнительные товары -->
     <section class="additional">
-      <div class="container">
+      <div class="additional__container container">
         <h2 class="additional__title additional__title--heading">Дополнительные товары</h2>
-        <div class="additional__container">
+        <div class="additional__wrapper">
           <ul class="additional__list">
             <li class="additional__item">
               <h3 class="additional__heading">Сахарозаменитель</h3>
@@ -307,15 +307,17 @@
     </section>
     <!-- Акции и новинки -->
     <section class="stocks">
-      <div class="container">
+      <div class="stocks__container container">
         <div class="stocks__wrapper">
           <h2 class="stocks__title">Акции и новинки</h2>
-          <p class="stocks__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-          <form class="stocks__form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="stocks-input">Укажите ваш email</label>
-            <input class="stocks__input" id="stocks-input" type="text" name="email" placeholder="кuklachev@gmail.com" required>
-            <button class="button button--big" type="submit">Подписаться</button>
-          </form>
+          <div class="stocks__info">
+            <p class="stocks__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+            <form class="stocks__form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="stocks-input">Укажите ваш email</label>
+              <input class="stocks__input" id="stocks-input" type="text" name="email" placeholder="кuklachev@gmail.com" required>
+              <button class="stocks__input--button button button--big" type="submit">Подписаться</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -335,7 +337,7 @@
           </picture>
         </div> -->
           <div class="address__wrapper">
-            <p class="address__text">Приглашаем <br>к сотрудничеству дилеров!</p>
+            <p class="address__text">Приглашаем <br>к сотрудничеству<br>дилеров!</p>
             <address class="address-info">
               <p class="address-info__text">ул. Большая Конюшенная, д. 19/8 <span class="address-info__desc">Санкт-Петербург</span></p>
             </address>

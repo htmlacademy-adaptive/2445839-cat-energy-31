@@ -1,7 +1,9 @@
 /* stylelint-disable @stylistic/indentation */
 .additional {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  // display: grid;
+  // grid-template-columns: 1fr;
 
   // @media (min-width: $tablet-width) {
 
@@ -9,14 +11,31 @@
 }
 
 .additional__container {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 896px 245px;
-    gap: 80px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 0;
+    background-color: $basik-green;
+    height: 2px;
+    width: 90%;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 18px;
+    }
   }
 }
 
 .additional__title {
+  width: 286px;
+  min-height: 24px;
   font-family: $primary-font;
   font-size: $title-mb;
   font-weight: inherit;
@@ -25,32 +44,34 @@
   margin: 0;
   flex-wrap: wrap;
 
-  @media (min-width: $tablet-width) {
-    font-size: $title-x3;
-    line-height: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: $title-heading;
-    line-height: 40px;
-    padding: 0 40px;
-    position: relative;
-  }
-
-  &--heading {
-    z-index: 2;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 20px;
-      bottom: 20px;
-      left: 0;
-      background-color: $basik-green;
-      height: 2px;
-      width: 100%;
-      z-index: 0;
+    @media (min-width: $tablet-width) {
+      width: 381px;
+      padding: 0 40px;
+      font-size: $title-x3;
+      line-height: 32px;
+      min-height: 32px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 416px;
+      font-size: $title-heading;
+      line-height: 40px;
+      padding: 0 40px 0 0;
+    }
+
+    &--heading {
+      position: relative;
+      z-index: 2;
+      background-color: $bg-text-white;
+      padding-right: 40px;
+    }
+}
+
+.additional__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 80px;
   }
 }
 
@@ -77,15 +98,15 @@
   margin: 0;
   flex-wrap: wrap;
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    min-height: 400px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 100%;
+  //   min-height: 400px;
+  // }
 
-   @media (min-width: $desktop-width) {
-    width: 100%;
-    min-height: 400px;
-  }
+  //  @media (min-width: $desktop-width) {
+  //   width: 100%;
+  //   min-height: 400px;
+  // }
 }
 
 // .additional__description {}
