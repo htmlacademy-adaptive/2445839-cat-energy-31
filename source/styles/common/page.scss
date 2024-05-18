@@ -3,14 +3,23 @@
 }
 
 .page__body {
+  font-family: "Lato", "Oswald", "Arial", sans-serif;
+  font-style: normal;
   font-weight: 400;
   background-color: $bg-text-white;
   min-height: 100%;
-  margin: 0;
-  font-family: "Lato", "Oswald", "Arial", sans-serif;
-  font-style: normal;
+  margin: 0 auto;
   color: $dark-grey;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 
   &--color {
     @media (min-width: $desktop-width) {
