@@ -1,6 +1,6 @@
 .gift {
   display: flex;
-  width: 280px;
+  width: 100%;
   min-height: 290px;
   background-image: url("../../images/additional/case-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -8,47 +8,58 @@
   position: relative;
   padding: 58px 61px 43px 58px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $bg-opacity;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
 
   &::before {
     content: "";
-    width: 280px;
-    min-height: 290px;
-    left: 0;
-    top: 0;
-    display: inline-block;
+    width: 78px;
+    height: 80px;
     position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 59px;
     background-image: url("../../icons/additeonal/icon-gift.svg");
     background-size: 78px 80px;
     background-repeat: no-repeat;
-    background-position: center top 58px;
-    background-color: $bg-opacity;
+    background-position: center;
+    z-index: 1;
   }
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    min-height: 200px;
-    justify-content: end;
-    padding: 57px 125px 60px 77px;
+    min-height: 100%;
+    padding: 57px 125px 69px 77px;
     background-image: url("../../images/additional/case-tablet@1x.jpg");
 
     &::before {
-      content: "";
-      width: 100%;
-      min-height: 200px;
-      left: 0;
-      top: 0;
-      display: inline-block;
-      position: absolute;
-      background-image: url("../../icons/additeonal/icon-gift.svg");
-      background-size: 80px 82px;
-      background-repeat: no-repeat;
-      background-position: left 77px center;
-      background-color: $bg-opacity;
+      top: 57px;
+      left: 77px;
+      margin: 0;
+      width: 80px;
+      height: 83px;
+      background-size: 80px 83px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    padding: 56px 42px 43px;
     background-image: url("../../images/additional/case-desktop@1x.jpg");
+
+    &::before {
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
   }
 }
 
@@ -59,13 +70,22 @@
   line-height: 20px;
   color: $bg-text-white;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-top: auto;
   z-index: 2;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    align-self: center;
+    min-height: 60px;
+    padding-top: 14px;
+    text-align: start;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-top: auto;
+    text-align: center;
   }
 }

@@ -8,7 +8,7 @@
   text-transform: uppercase;
   text-decoration: none;
   display: block;
-  width: 100%;
+  width: auto;
   min-height: 40px;
   border: none;
   cursor: pointer;
@@ -31,6 +31,7 @@
   }
 
   &--primary {
+    width: 100%;
     background-color: $background-grey;
     color: $dark-grey;
 
@@ -50,7 +51,9 @@
   &--position {
     position: absolute;
   }
-  // &--secondary {}
+
+  // &--secondary {
+  // }
 
   &--big {
     width: 100%;
