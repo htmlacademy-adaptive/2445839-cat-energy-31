@@ -1,6 +1,6 @@
 
 .address {
-  width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,13 +8,12 @@
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     min-height: 400px;
   }
 }
 
 .address__container {
-  width: 320px;
+  width: 100%;
   min-height: 474px;
   background: url("../../images/location/location-mobile@1x.jpg");
   background-position: bottom;
@@ -23,14 +22,12 @@
 
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     min-height: 600px;
     background-image: url("../../images/location/location-tablet@1x.jpg");
     background-size: 768px 400px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1420px;
     min-height: 400px;
     background-image: url("../../images/location/location-desktop@1x.jpg");
     background-size: 1440px;
@@ -44,12 +41,13 @@
 }
 
 .address__wrapper {
-  width: 100%;
+  // width: 100%;
   min-height: auto;
   background-color: $background-grey;
   padding: 26px 0;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding: 60px 40px;

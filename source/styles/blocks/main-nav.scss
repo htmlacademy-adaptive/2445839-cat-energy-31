@@ -1,3 +1,4 @@
+/* stylelint-disable CssSyntaxError */
 .main-nav {
   width: 100%;
   align-content: center;
@@ -5,20 +6,64 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 174px 436px;
-    gap: 10%;
+    gap: 94px;
     align-items: center;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }
+
+  & .main-nav__toggle--close::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    mask-image: url("../../icons/logotypes/burger.svg");
+    mask-size: 24px;
+    background-color: $bg-color-dark;
+    display: block;
+  }
+
+  & .main-nav__toggle--open::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    mask-image: url("../../icons/logotypes/Logo_cross.svg");
+    mask-size: 25px;
+    background-color: $bg-color-dark;
+  }
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--opened .sate {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    z-index: 10;
+    min-height: 20vh;
+    background-color: $bg-text-white;
+  }
+
+
+  // &--nojs .sate {
+  //   display: block;
+  //   position: static;
+  // }
 }
 
 .main-nav__toggle {
   background-color: transparent;
   mask-repeat: no-repeat;
   mask-position: center;
+  text-align: end;
   border: none;
   cursor: pointer;
   padding: 0;
@@ -42,23 +87,14 @@
     display: none;
   }
 
-  &--open::after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    mask-image: url("../../icons/logotypes/burger.svg");
-    mask-size: 24px;
-    background-color: $bg-color-dark;
+  &--open .main-nav__sate {
+    width: 100%;
     display: block;
-  }
-
-  &--close::before {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 18px;
-    mask-image: url("../../icons/logotypes/Logo_cross.svg");
-    mask-size: 18px;
-    background-color: $bg-color-dark;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    min-height: 40vh;
+    background-color: $bg-text-white;
   }
 }

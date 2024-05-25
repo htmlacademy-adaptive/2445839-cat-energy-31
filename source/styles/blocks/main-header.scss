@@ -1,9 +1,10 @@
 .main-header {
+  width: 100%;
   min-height: 38px;
   margin: 0 auto;
   padding: 13px 0 15px;
 }
 
-// .main-header__wrapper {
-
-// }
+.main-header__container {
+  position: relative;
+}

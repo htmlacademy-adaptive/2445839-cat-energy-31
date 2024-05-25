@@ -1,6 +1,7 @@
 /* stylelint-disable max-nesting-depth */
 /* stylelint-disable @stylistic/indentation */
 .dignities {
+  width: 100%;
   margin-bottom: 49px;
   position: relative;
   min-height: 100%;
@@ -46,6 +47,7 @@
 }
 
 .dignities__list {
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -55,17 +57,18 @@
 
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 230px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 37px 137px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 230px 246px 248px 250px;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 77px;
   }
 }
 
 .dignities__item {
+  min-height: 60px;
   counter-increment: example 1;
   padding-left: 80px;
   margin-bottom: 20px;
@@ -76,7 +79,57 @@
     margin-bottom: 0;
   }
 
+  &--offer {
+    width: 100%;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basik-green;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      align-content: center;
+    }
+  }
+
+  &--food {
+    &::after {
+      background-image: url("../../icons/dignities/icon-leaf.svg");
+      background-size: 24px 28px;
+    }
+  }
+
+  &--nutrients {
+    &::after {
+      background-image: url("../../icons/dignities/icon-powder.svg");
+      background-size: 26px 29px;
+    }
+  }
+
+
+  &--replace {
+    &::after {
+      background-image: url("../../icons/dignities/icon-eat.svg");
+      background-size: 25px 30px;
+    }
+  }
+
+  &--changes {
+    &::after {
+      background-image: url("../../icons/dignities/icon-watch.svg");
+      background-size: 26px 31px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    min-height: 280px;
+    padding-left: 0;
+    margin: 0;
+
     &::before {
       position: absolute;
       text-align: end;
@@ -88,22 +141,33 @@
       line-height: 280px;
       color: $background-grey;
     }
-  }
+
+    &--food {
+      width: 230px;
+
+      &::after {
+        background-size: 30px 32px;
+      }
+    }
+
+    &--nutrients {
+      width: 246px;
+    }
+
+    &--replace {
+      width: 247px;
+    }
+
+    &--changes {
+      width: 250px;
+
+      &::after {
+        margin-right: 0;
+      }
+    }
 
     &--offer {
       &::after {
-        content: "";
-        width: 60px;
-        height: 60px;
-        background-color: $basik-green;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-repeat: no-repeat;
-        background-position: center;
-        align-content: center;
-
-      @media (min-width: $tablet-width) {
         width: 80px;
         height: 80px;
         top: 40px;
@@ -111,61 +175,10 @@
       }
     }
   }
-
-  &--food {
-    width: 230px;
-
-    &::after {
-      background-image: url("../../icons/dignities/icon-leaf.svg");
-      background-size: 24px 28px;
-
-      @media (min-width: $tablet-width) {
-        background-size: 30px 32px;
-      }
-    }
-  }
-
-  &--nutrients {
-    width: 246px;
-
-    &::after {
-      background-image: url("../../icons/dignities/icon-powder.svg");
-      background-size: 26px 29px;
-    }
-  }
-
-  &--replace {
-    width: 247px;
-
-    &::after {
-      background-image: url("../../icons/dignities/icon-eat.svg");
-      background-size: 25px 30px;
-    }
-  }
-
-  &--changes {
-    width: 249px;
-
-    &::after {
-      background-image: url("../../icons/dignities/icon-watch.svg");
-      background-size: 26px 31px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 250px;
-      margin-right: 0;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 280px;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
 }
 
 .dignities__text {
-  width: 200px;
+  width: 100%;
   font-family: $secondary-font;
   font-size: $title-ms;
   line-height: 18px;
@@ -174,7 +187,6 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     align-self: end;
     font-size: $title-xs;
     line-height: 24px;

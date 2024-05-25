@@ -19,7 +19,7 @@
   <!-- шапка сайта -->
   <header class="main-header">
     <div class="main-header__wrapper">
-      <div class="container">
+      <div class="main-header__container container">
         <nav class="main-nav">
           <div class="logo">
             <div class="logo__wrapper">
@@ -36,18 +36,20 @@
                 </svg>
               </a>
             </div>
-            <button class="main-nav__toggle main-nav__toggle--close" type="button">
-              <!-- main-nav__toggle--close Включает крестик -->
-              <!-- main-nav__toggle--open включает бургер -->
-              <span class="visually-hidden">Открывает меню навигации.</span>
-            </button>
-          </div>
-          <div class="sate">
-            <ul class="sate__list">
-              <li class="sate__item"><a class="sate__link" href="index.html">Главная</a></li>
-              <li class="sate__item sate__item-current"><a class="sate__link" href="#">Каталог продукции</a></li>
-              <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
-            </ul>
+            <div class="main-nav__wrapper main-nav__wrapper--opened">
+              <button class="main-nav__toggle main-nav__toggle--close" type="button">
+                <!-- main-nav__toggle--close Включает крестик -->
+                <!-- main-nav__toggle--open включает бургер -->
+                <span class="visually-hidden">Открывает меню навигации.</span>
+              </button>
+              <div class="sate">
+                <ul class="sate__list">
+                  <li class="sate__item"><a class="sate__link" href="index.html">Главная</a></li>
+                  <li class="sate__item sate__item-current"><a class="sate__link" href="#">Каталог продукции</a></li>
+                  <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </nav>
       </div>

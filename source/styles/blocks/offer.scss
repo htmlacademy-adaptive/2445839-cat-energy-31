@@ -16,6 +16,7 @@
 }
 
 .offer__wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
 
@@ -36,7 +37,6 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-self: center;
   text-align: center;
   margin-bottom: 25px;
 
@@ -75,21 +75,30 @@
 
 .offer__link {
   display: block;
+  min-width: 280px;
   position: absolute;
   bottom: -10px;
+  align-self: center;
   align-content: center;
 
-
   @media (min-width: $tablet-width) {
-    width: 244px;
+    min-width: 244px;
     height: 54px;
     position: static;
+    align-self: start;
   }
 }
 
-.offer__images-wrapper img {
-  display: block;
+.offer__images-wrapper {
+  display: flex;
+  justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
+}
+
+.offer__img {
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
