@@ -34,8 +34,6 @@
   }
 }
 
-// .stocks__wrapper {}
-
 .stocks__title {
   font-size: $title-mb;
   font-family: $primary-font;
@@ -99,10 +97,6 @@
   }
 }
 
-// .stocks__container {}
-
-// .stocks__label {}
-
 .stocks__input {
   font-family: $primary-font;
   font-size: $title-size;
@@ -119,13 +113,13 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+}
 
-  &--button {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.stocks__button {
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    @media (min-width: $tablet-width) {
-      width: 256px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 256px;
   }
 }

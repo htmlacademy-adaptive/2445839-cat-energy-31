@@ -80,6 +80,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    outline: none;
     margin: 0;
   }
 }
@@ -104,6 +105,10 @@
     padding: 15px 0 17px;
     gap: 40px;
     align-content: center;
+
+    &:last-child {
+      border-bottom: 1px solid $bg-outline;
+    }
   }
 }
 

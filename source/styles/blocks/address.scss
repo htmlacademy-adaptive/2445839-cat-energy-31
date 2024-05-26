@@ -5,30 +5,61 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  background-color: $background-grey;
+  // order: 2;
+  // min-height: 474px;
+  // background: url("../../images/location/location-mobile@1x.jpg");
+  // background-position: bottom;
+  // background-repeat: no-repeat;
+  // background-size: 320px 362px;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
   }
+
+  &--container {
+    background-color: $background-grey;
+  }
 }
 
-.address__container {
+// .address__container {
+//   width: 100%;
+//   min-height: 474px;
+//   background: url("../../images/location/location-mobile@1x.jpg");
+//   background-position: bottom;
+//   background-repeat: no-repeat;
+//   background-size: 320px 362px;
+
+
+//   @media (min-width: $tablet-width) {
+//     min-height: 600px;
+//     background-image: url("../../images/location/location-tablet@1x.jpg");
+//     background-size: 768px 400px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     min-height: 400px;
+//     background-image: url("../../images/location/location-desktop@1x.jpg");
+//     background-size: 1440px;
+//     background-position: top;
+//     position: relative;
+//   }
+// }
+
+.address__map {
   width: 100%;
-  min-height: 474px;
+  height: 362px;
   background: url("../../images/location/location-mobile@1x.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 320px 362px;
+  background-size: 100% contain;
 
 
   @media (min-width: $tablet-width) {
-    min-height: 600px;
     background-image: url("../../images/location/location-tablet@1x.jpg");
     background-size: 768px 400px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 400px;
     background-image: url("../../images/location/location-desktop@1x.jpg");
     background-size: 1440px;
     background-position: top;
@@ -36,16 +67,14 @@
   }
 }
 
-.address__map {
-  order: 2;
-}
-
 .address__wrapper {
+  // width: 100%;
   // width: 100%;
   min-height: auto;
   background-color: $background-grey;
   padding: 26px 0;
   display: flex;
+  order: 0;
   flex-direction: row-reverse;
   justify-content: space-between;
 

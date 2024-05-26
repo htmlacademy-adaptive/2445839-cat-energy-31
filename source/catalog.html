@@ -18,41 +18,27 @@
 <body class="page__body">
   <!-- шапка сайта -->
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <div class="main-header__container container">
-        <nav class="main-nav">
-          <div class="logo">
-            <div class="logo__wrapper">
-              <a class="logo__link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
-                <div class="logo__icon">
-                  <picture>
-                    <source media="(min-width:1200px)" width="70" height="59" srcset="images/icons/logo-desktop.svg" type="image/svg+xml">
-                    <source media="(min-width:768px)" width="60" height="50" srcset="images/icons/logo-tablet.svg" type="image/svg+xml">
-                    <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип «Супер котик».">
-                  </picture>
-                </div>
-                <svg class="logo__icon logo__icon--name" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 128 24">
-                  <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="main-nav__wrapper main-nav__wrapper--opened">
-              <button class="main-nav__toggle main-nav__toggle--close" type="button">
-                <!-- main-nav__toggle--close Включает крестик -->
-                <!-- main-nav__toggle--open включает бургер -->
-                <span class="visually-hidden">Открывает меню навигации.</span>
-              </button>
-              <div class="sate">
-                <ul class="sate__list">
-                  <li class="sate__item"><a class="sate__link" href="index.html">Главная</a></li>
-                  <li class="sate__item sate__item-current"><a class="sate__link" href="#">Каталог продукции</a></li>
-                  <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
+    <div class="main-header__container container">
+      <a class="logo" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
+        <picture>
+          <source media="(min-width:1200px)" width="70" height="59" srcset="images/icons/logo-desktop.svg" type="image/svg+xml">
+          <source media="(min-width:768px)" width="60" height="50" srcset="images/icons/logo-tablet.svg" type="image/svg+xml">
+          <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип «Супер котик».">
+        </picture>
+        <svg class="logo__icon logo__icon--name" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 128 24">
+          <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
+        </svg>
+      </a>
+      <nav class="main-nav main-nav--nojs main-nav--closed main-nav--opened">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открывает меню навигации.</span>
+        </button>
+        <ul class="sate">
+          <li class="sate__item"><a class="sate__link" href="index.html">Главная</a></li>
+          <li class="sate__item sate__item-current"><a class="sate__link" href="#">Каталог продукции</a></li>
+          <li class="sate__item"><a class="sate__link" href="#">Подбор программы</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <!-- каталог продукции -->
@@ -74,7 +60,7 @@
               </a>
               <div class="catalog__description">
                 <a class="catalog__link-card" href="#">
-                  <h2 class="catalog__heading">Cat Energy PRO 500 г</h2>
+                  <h2 class="catalog__heading">Cat Energy PRO 500&nbsp;г</h2>
                 </a>
                 <dl class="catalog__container">
                   <dt class="catalog__desc">Масса</dt>
@@ -102,7 +88,7 @@
               </a>
               <div class="catalog__description catalog__description--max">
                 <a class="catalog__link-card" href="#">
-                  <h2 class="catalog__heading">Cat Energy PRO 1000 г</h2>
+                  <h2 class="catalog__heading">Cat Energy PRO 1000&nbsp;г</h2>
                 </a>
                 <dl class="catalog__container">
                   <dt class="catalog__desc">Масса</dt>
@@ -129,7 +115,7 @@
               </a>
               <div class="catalog__description">
                 <a class="catalog__link-card" href="#">
-                  <h2 class="catalog__heading">Cat Energy PRO 500 г</h2>
+                  <h2 class="catalog__heading">Cat Energy PRO 500&nbsp;г</h2>
                 </a>
                 <dl class="catalog__container">
                   <dt class="catalog__desc">Масса</dt>
@@ -157,7 +143,7 @@
               </a>
               <div class="catalog__description catalog__description--max">
                 <a class="catalog__link-card" href="#">
-                  <h2 class="catalog__heading">Cat Energy PRO 1000 г</h2>
+                  <h2 class="catalog__heading">Cat Energy PRO 1000&nbsp;г</h2>
                 </a>
                 <dl class="catalog__container">
                   <dt class="catalog__desc">Масса</dt>
@@ -184,7 +170,7 @@
               </a>
               <div class="catalog__description">
                 <a class="catalog__link-card" href="#">
-                  <h2 class="catalog__heading">Cat Energy PRO 500 г</h2>
+                  <h2 class="catalog__heading">Cat Energy PRO 500&nbsp;г</h2>
                 </a>
                 <dl class="catalog__container">
                   <dt class="catalog__desc">Масса</dt>
@@ -212,7 +198,7 @@
               </a>
               <div class="catalog__description catalog__description--max">
                 <a class="catalog__link-card" href="#">
-                  <h2 class="catalog__heading">Cat Energy PRO 1000 г</h2>
+                  <h2 class="catalog__heading">Cat Energy PRO 1000&nbsp;г</h2>
                 </a>
                 <dl class="catalog__container">
                   <dt class="catalog__desc">Масса</dt>
@@ -239,7 +225,7 @@
               </a>
               <div class="catalog__description">
                 <a class="catalog__link-card" href="#">
-                  <h2 class="catalog__heading">Cat Energy PRO 500 г</h2>
+                  <h2 class="catalog__heading">Cat Energy PRO 500&nbsp;г</h2>
                 </a>
                 <dl class="catalog__container">
                   <dt class="catalog__desc">Масса</dt>
@@ -327,7 +313,7 @@
             <form class="stocks__form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="stocks-input">Укажите ваш email</label>
               <input class="stocks__input" id="stocks-input" type="text" name="email" placeholder="кuklachev@gmail.com" required>
-              <button class="stocks__input--button button button--big" type="submit">Подписаться</button>
+              <button class="stocks__button button button--big" type="submit">Подписаться</button>
             </form>
           </div>
         </div>
@@ -347,7 +333,6 @@
             <p class="address-info__text">ул. Большая Конюшенная, д. 19/8 <span class="address-info__desc">Санкт-Петербург</span></p>
           </address>
         </div>
-      </div>
       </div>
     </section>
     <section class="main-footer__social">
@@ -379,7 +364,7 @@
       </div>
     </section>
   </footer>
-
+  <script src="index.js"></script>
 </body>
 
 </html>

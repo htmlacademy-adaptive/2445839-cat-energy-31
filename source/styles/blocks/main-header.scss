@@ -2,9 +2,18 @@
   width: 100%;
   min-height: 38px;
   margin: 0 auto;
-  padding: 13px 0 15px;
+  padding-top: 13px;
+  padding-bottom: 15px;
 }
 
 .main-header__container {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 94px;
+  }
 }

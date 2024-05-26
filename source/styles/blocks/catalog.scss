@@ -164,14 +164,12 @@
 .catalog__link--card {
   width: 140px;
   min-height: 107px;
-}
-
-
-.catalog__icon {
   text-align: center;
 }
 
-.catalog__icon-img {
+.catalog__icon {
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 210px;

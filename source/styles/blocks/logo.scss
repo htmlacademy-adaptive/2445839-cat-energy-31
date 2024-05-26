@@ -1,23 +1,14 @@
 .logo {
+  display: flex;
   height: 38px;
   align-items: center;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     min-width: 174px;
     padding: 0;
     margin-bottom: 0;
   }
-}
-
-.logo__link {
-  display: flex;
-  justify-content: space-between;
-  height: 38px;
-  align-items: center;
-  text-align: center;
-
 
   &:not([href]) .logo__icon {
     color: $bg-card-color;
@@ -25,18 +16,21 @@
     opacity: 0.5;
   }
 
+  &[href]:hover,
+  &[href]:focus-visible,
   &[href]:hover .logo__icon,
   &[href]:focus-visible .logo__icon {
     opacity: 0.8;
   }
 
+  &[href]:active,
   &[href]:active .logo__icon {
     opacity: 0.6;
   }
 }
 
 .logo__icon--name {
-  margin: 0 65px 0 56px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 13px;
@@ -46,4 +40,3 @@
     margin-left: 14px;
   }
 }
-

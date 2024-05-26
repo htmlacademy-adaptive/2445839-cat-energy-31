@@ -1,7 +1,11 @@
 .offer {
-  background-image: linear-gradient($bg-opacity 60%, $bg-text-white 50%), url("../../images/offer/cat-mobile@1x.jpg");
-  background-size: contain, 320px 302px;
-  background-position: top 0 left 0;
+  width: 100%;
+  background-image:
+    linear-gradient($bg-opacity 60%, $bg-text-white 50%),
+    image-set(url("../../images/offer/cat-mobile@1x.jpg")),
+    linear-gradient(90deg, $bg-line-gradient1 50%, $bg-line-gradient2 50%);
+  background-size: 100%, 320px 320px;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   padding: 27px 0 29px;
   text-align: center;
