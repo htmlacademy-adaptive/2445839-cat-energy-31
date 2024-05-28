@@ -9,20 +9,30 @@
   line-height: 20px;
   text-transform: uppercase;
   background-color: $bg-text-white;
+  color: $bg-color-dark;
   margin-top: 15px;
 
   @media (min-width: $tablet-width) {
-    display: block;
     font-size: $title-18;
     line-height: 24px;
     margin-top: 0;
-  }
-
-  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
     min-height: 36px;
+  }
+
+  &--color {
+    background-color: transparent;
+
+    @media (min-width: $desktop-width) {
+      .sate__link {
+        color: $bg-text-white;
+      }
+    }
   }
 }
 
@@ -64,7 +74,7 @@
   }
 }
 
-.sate__item-current {
+.sate__item--current {
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -81,3 +91,18 @@
     }
   }
 }
+
+.sate__item--active {
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $bg-text-white;
+    }
+  }
+}
+
