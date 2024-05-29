@@ -11,53 +11,44 @@
   }
 }
 
-.stocks__container {
+.stocks__title {
+  font-size: $title-mb;
+  font-family: $primary-font;
+  width: fit-content;
+  font-weight: inherit;
+  line-height: 24px;
   position: relative;
+  background-color: $bg-text-white;
+  box-shadow: -20px 0 0 0 $bg-text-white, 40px 0 0 0 $bg-text-white;
+  margin: 0 0 32px;
+  flex-wrap: wrap;
+  min-height: 24px;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
+    box-shadow: 100vw 0 0 0 $basik-green, 40px 0 0 0 $basik-green;
+    height: 2px;
     top: 13px;
     right: 0;
     background-color: $basik-green;
-    height: 2px;
-    width: 90%;
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
+    width: 100vw;
+    z-index: -3;
 
     @media (min-width: $tablet-width) {
       top: 18px;
     }
   }
-}
-
-.stocks__title {
-  font-size: $title-mb;
-  font-family: $primary-font;
-  width: 192px;
-  font-weight: inherit;
-  line-height: 24px;
-  background-color: $bg-text-white;
-  margin: 0 0 32px;
-  flex-wrap: wrap;
-  min-height: 24px;
 
   @media (min-width: $tablet-width) {
-    font-size: 32px;
+    font-size: $title-x3;
     line-height: 32px;
     min-height: 32px;
-    width: 282px;
-    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 40px;
+    font-size: $title-heading;
     line-height: 40px;
-    width: 293px;
-    padding: 0 40px 0 0;
     min-height: 40px;
   }
 }
