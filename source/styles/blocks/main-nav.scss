@@ -88,18 +88,13 @@
     min-height: 20vh;
     background-color: $bg-text-white;
   }
-
-
-  // &--nojs .sate {
-  //   display: block;
-  //   position: static;
-  // }
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 5px;
   right: 20px;
+  padding: 0;
   background-color: transparent;
   mask-repeat: no-repeat;
   mask-position: center;

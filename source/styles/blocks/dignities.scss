@@ -40,7 +40,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
     font-size: $title-max;
     line-height: 60px;
   }
@@ -57,13 +57,13 @@
 
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 37px 137px;
+    grid-template-columns: repeat(2, auto);
+    gap: 37px 63px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 77px;
+    grid-template-columns: repeat(4, auto);
+    gap: 0;
   }
 }
 
@@ -144,6 +144,7 @@
 
     &--food {
       width: 230px;
+      margin-right: 94px;
 
       &::after {
         background-size: 30px 32px;
@@ -152,10 +153,12 @@
 
     &--nutrients {
       width: 246px;
+      margin-right: 79px;
     }
 
     &--replace {
       width: 247px;
+      margin-right: 77px;
     }
 
     &--changes {
@@ -191,7 +194,7 @@
     font-size: $title-xs;
     line-height: 24px;
     text-align: start;
-    margin-bottom: 57px;
+    margin-bottom: 54px;
     z-index: 2;
   }
 }

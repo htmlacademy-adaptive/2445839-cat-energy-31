@@ -9,12 +9,12 @@
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0;
+    padding: 46px 0 55px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 66px 0;
-  }
+  // @media (min-width: $tablet-width) {
+  //   padding: 66px 0;
+  // }
 }
 
 .main-footer__container {

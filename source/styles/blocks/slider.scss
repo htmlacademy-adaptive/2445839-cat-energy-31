@@ -3,6 +3,15 @@
   position: relative;
   padding-bottom: 40px;
   background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 101px;
+    background-image: linear-gradient ($bg-text-white 20%, $bg-grey 20%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .slider__list {
@@ -16,7 +25,7 @@
   position: relative;
   display: grid;
   grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
-
+  margin: 0 auto;
   width: min(100%, 560px);
   aspect-ratio: 280/256;
 }
@@ -43,7 +52,7 @@
 .slider__toggle {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 51%;
   width: 4px;
   height: 100%;
   background-color: $bg-social;
@@ -61,8 +70,12 @@
     border: 2px solid $bg-social;
     background-color: $bg-text-white;
     position: absolute;
-    left: -17px;
-    top: 48%;
+    left: -19px;
+    top: 42%;
+
+    @media (min-width: $tablet-width) {
+      top: 46%;
+    }
   }
 
   &::after {
@@ -70,13 +83,18 @@
     width: 24px;
     height: 18px;
     left: -10px;
-    top: 50%;
+    top: 46%;
     display: block;
     background-color: $bg-social;
     mask-image: url("../../images/slider/slider-button@1x.png");
     mask-size: 24px 18px;
     mask-position: center;
     position: absolute;
+
+    @media (min-width: $tablet-width) {
+      top: 48%;
+      left: -11px;
+    }
   }
 }
 

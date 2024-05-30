@@ -10,7 +10,7 @@
   }
 }
 
-@media screen and (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .container {
     max-width: 1440px;
     padding: 0 110px;

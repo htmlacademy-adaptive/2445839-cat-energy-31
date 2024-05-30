@@ -4,6 +4,10 @@
   margin: 0 auto;
   padding-top: 13px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-header__container {
@@ -14,6 +18,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 94px;
+    column-gap: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
   }
 }

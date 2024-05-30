@@ -4,11 +4,12 @@
 }
 
 .page__body {
+  min-width: 320px;
+  min-height: 100%;
   font-family: "Lato", "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: $bg-text-white;
-  min-height: 100%;
   margin: 0 auto;
   color: $dark-grey;
   display: flex;

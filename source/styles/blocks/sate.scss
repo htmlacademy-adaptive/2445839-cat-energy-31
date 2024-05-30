@@ -23,6 +23,8 @@
 
   @media (min-width: $desktop-width) {
     min-height: 36px;
+    font-size: $title-size;
+    line-height: 29px;
   }
 
   &--color {

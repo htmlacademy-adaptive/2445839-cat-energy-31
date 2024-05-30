@@ -1,6 +1,6 @@
 .advantages {
   color: $bg-color-dark;
-  margin: 30px 0 20px;
+  margin: 20px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 45px;
@@ -80,7 +80,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 41px 67px 55px 52px;
+    padding: 41px 61px 55px 52px;
   }
 }
 // иконка кот 1
@@ -91,7 +91,7 @@
     width: 36px;
     height: 50px;
     position: absolute;
-    left: 30px;
+    left: 28px;
     top: 22px;
     background-image: url("../../icons/stack.svg#advantages_cat-slim");
     background-repeat: no-repeat;
@@ -153,7 +153,6 @@
   }
 }
 
-
 .advantages__title {
   font-weight: 400;
   font-family: $primary-font;
@@ -176,7 +175,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 36px;
-    padding-top: 30px;
+    padding-top: 38px;
     margin-bottom: 73px;
     text-align: end;
     align-content: center;
@@ -200,7 +199,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 374px;
+      width: 368px;
     }
   }
 }
@@ -262,19 +261,21 @@
 
   &::after {
     content: "";
-    width: 32px;
-    height: 10px;
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    top: 7px;
     display: inline-block;
-    mask-image: url("../../icons/advantages/arrow.svg");
+    mask-image: url("../../icons/advantages/arrow-big.svg");
     mask-repeat: no-repeat;
-    mask-size: 32px 10px;
+    mask-size: 24px 12px;
     mask-position: center;
     background-color: $bg-color-dark;
     margin-left: 15px;
 
-
     @media (min-width: $tablet-width) {
       margin-left: 25px;
+      top: 14px;
     }
   }
 
@@ -288,7 +289,6 @@
   &[href]:focus-visible::after {
     width: 32px;
     height: 12px;
-    mask-image: url("../../icons/advantages/arrow-big.svg");
     mask-size: 32px 12px;
     right: 0;
   }

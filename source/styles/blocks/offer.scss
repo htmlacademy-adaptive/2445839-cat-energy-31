@@ -1,13 +1,14 @@
 .offer {
   width: 100%;
+  min-height: 400px;
   background-image:
-    linear-gradient($bg-opacity 60%, $bg-text-white 50%),
+    linear-gradient($bg-opacity 63%, $bg-text-white 40%),
     image-set(url("../../images/offer/cat-mobile@1x.jpg")),
-    linear-gradient(90deg, $bg-line-gradient1 50%, $bg-line-gradient2 50%);
-  background-size: 100%, 320px 320px;
+    linear-gradient(90deg, $bg-line-gradient1 60%, $bg-line-gradient2 50%);
+  background-size: 100%, 320px 302px;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  padding: 27px 0 29px;
+  padding: 27px 0 42px;
   text-align: center;
   position: relative;
 
@@ -35,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 110px;
+    margin-top: 115px;
     margin-left: 80px;
   }
 }
@@ -66,7 +67,7 @@
 }
 
 .offer__text {
-  min-height: 20px;
+  min-height: 14px;
   font-family: $primary-font;
   font-size: $title-ms;
   line-height: 14px;
@@ -87,10 +88,12 @@
 }
 
 .offer__link {
+  font-size: $title-size;
+  line-height: 26px;
   display: block;
   min-width: 280px;
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   align-self: center;
   align-content: center;
 
@@ -114,14 +117,14 @@
 .offer__img {
   @media (min-width: $tablet-width) {
     display: block;
-    top: 69%;
+    top: 70%;
     position: absolute;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    right: 22.5%;
-    top: -100px;
+    right: 330px;
+    top: -82px;
     z-index: 2;
   }
 }
