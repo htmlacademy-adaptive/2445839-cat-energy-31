@@ -1,5 +1,3 @@
-/* stylelint-disable max-nesting-depth */
-/* stylelint-disable @stylistic/indentation */
 .dignities {
   width: 100%;
   margin-bottom: 49px;
@@ -94,34 +92,14 @@
       background-position: center;
       align-content: center;
     }
-  }
 
-  &--food {
-    &::after {
-      background-image: url("../../icons/dignities/icon-leaf.svg");
-      background-size: 24px 28px;
-    }
-  }
-
-  &--nutrients {
-    &::after {
-      background-image: url("../../icons/dignities/icon-powder.svg");
-      background-size: 26px 29px;
-    }
-  }
-
-
-  &--replace {
-    &::after {
-      background-image: url("../../icons/dignities/icon-eat.svg");
-      background-size: 25px 30px;
-    }
-  }
-
-  &--changes {
-    &::after {
-      background-image: url("../../icons/dignities/icon-watch.svg");
-      background-size: 26px 31px;
+    @media (min-width: $tablet-width) {
+      &::after {
+        width: 80px;
+        height: 80px;
+        top: 40px;
+        left: 0;
+      }
     }
   }
 
@@ -141,44 +119,65 @@
       line-height: 280px;
       color: $background-grey;
     }
+  }
+}
 
-    &--food {
-      width: 230px;
-      margin-right: 94px;
+.dignities__item--food {
+  &::after {
+    background-image: url("../../icons/dignities/icon-leaf.svg");
+    background-size: 24px 28px;
+  }
 
-      &::after {
-        background-size: 30px 32px;
-      }
-    }
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-right: 94px;
 
-    &--nutrients {
-      width: 246px;
-      margin-right: 79px;
-    }
-
-    &--replace {
-      width: 247px;
-      margin-right: 77px;
-    }
-
-    &--changes {
-      width: 250px;
-
-      &::after {
-        margin-right: 0;
-      }
-    }
-
-    &--offer {
-      &::after {
-        width: 80px;
-        height: 80px;
-        top: 40px;
-        left: 0;
-      }
+    &::after {
+      background-size: 30px 32px;
     }
   }
 }
+
+.dignities__item--nutrients {
+  &::after {
+    background-image: url("../../icons/dignities/icon-powder.svg");
+    background-size: 26px 29px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 246px;
+    margin-right: 79px;
+  }
+}
+
+
+.dignities__item--replace {
+  &::after {
+    background-image: url("../../icons/dignities/icon-eat.svg");
+    background-size: 25px 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    margin-right: 77px;
+  }
+}
+
+.dignities__item--changes {
+  &::after {
+    background-image: url("../../icons/dignities/icon-watch.svg");
+    background-size: 26px 31px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+
+    &::after {
+      margin-right: 0;
+    }
+  }
+}
+
 
 .dignities__text {
   width: 100%;

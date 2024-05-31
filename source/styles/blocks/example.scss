@@ -1,12 +1,10 @@
 .example {
   font-weight: inherit;
-  background-color: $bg-grey;
   padding: 25px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 92px 0 67px;
-    background-color: $bg-text-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,7 +62,7 @@
   }
 }
 
-.example__container {
+.example__box {
   @media (min-width: $tablet-width) {
     display: flex;
     margin-left: auto;
@@ -88,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 }
 
@@ -130,7 +128,7 @@
 }
 
 .example__achievement-title {
-  width: fit-content;
+  width: 70%;
   position: absolute;
   bottom: -28px;
   left: 50%;
@@ -144,14 +142,6 @@
   padding: 0 10px;
   margin: 0;
 
-  & br {
-    display: block;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     bottom: -11px;
     font-size: $title-ms;
@@ -159,6 +149,14 @@
     background-color: $bg-text-white;
     padding: 0 5px;
     min-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-grey;
+
+    &--title {
+      width: 90%;
+    }
   }
 }
 
@@ -200,7 +198,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 63px;
+    margin-right: 65px;
   }
 }
 

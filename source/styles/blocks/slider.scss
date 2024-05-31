@@ -2,22 +2,16 @@
   margin: 0 auto;
   position: relative;
   padding-bottom: 40px;
-  background-color: $bg-grey;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 101px;
-    background-image: linear-gradient ($bg-text-white 20%, $bg-grey 20%);
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 0;
+    width: 560px;
+    padding-bottom: 85px;
+    margin: 0;
   }
-}
-
-.slider__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
 }
 
 .slider__images {
@@ -61,6 +55,10 @@
   cursor: pointer;
   border-radius: 2px;
 
+  @media (min-width: $desktop-width) {
+    left: 50%;
+  }
+
   &::before {
     content: "";
     width: 40px;
@@ -75,6 +73,10 @@
 
     @media (min-width: $tablet-width) {
       top: 46%;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -18px;
     }
   }
 
@@ -95,6 +97,28 @@
       top: 48%;
       left: -11px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: -10px;
+    }
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:hover::after,
+  &:focus-visible::after {
+    transition: background-color 0.2s ease-in-out;
+    background-color: $basik-green;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    transition: background-color 0.2s ease-in-out;
+    border: 2px solid $basik-green;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
