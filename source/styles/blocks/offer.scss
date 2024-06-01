@@ -88,8 +88,8 @@
 }
 
 .offer__link {
-  font-size: $title-size;
-  line-height: 26px;
+  font-size: $title-xs;
+  line-height: 20px;
   display: block;
   min-width: 280px;
   position: absolute;
@@ -97,7 +97,13 @@
   align-self: center;
   align-content: center;
 
+  @media (min-width: $mobile-intermediate) {
+    width: 92%;
+  }
+
   @media (min-width: $tablet-width) {
+    font-size: $title-size;
+    line-height: 26px;
     min-width: 244px;
     height: 54px;
     position: static;

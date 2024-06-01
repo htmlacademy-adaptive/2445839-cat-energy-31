@@ -19,12 +19,15 @@
     display: flex;
     justify-content: space-between;
     gap: 33px;
+    margin-right: 4px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 36px;
     font-size: $title-size;
     line-height: 29px;
+    margin-right: 0;
+    gap: 35px;
   }
 
   &--color {
@@ -72,7 +75,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 14px 0 12px;
+    padding: 14px 0 8px;
   }
 }
 

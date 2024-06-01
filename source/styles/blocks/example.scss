@@ -149,14 +149,14 @@
     background-color: $bg-text-white;
     padding: 0 5px;
     min-height: 14px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $background-grey;
 
     &--title {
       width: 90%;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-grey;
   }
 }
 

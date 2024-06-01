@@ -40,37 +40,41 @@
       display: block;
       margin-top: 15px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    gap: 94px;
-    align-items: center;
-    text-align: center;
-  }
+    @media (min-width: $tablet-width) {
+      gap: 94px;
+      align-items: center;
+      text-align: center;
+    }
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  & .main-nav__toggle--close::before {
-    content: "";
-    width: 24px;
-    height: 24px;
-    mask-image: url("../../icons/logotypes/burger.svg");
-    mask-size: 24px;
-    background-color: $bg-color-dark;
-    display: block;
-  }
+    & .main-nav__toggle--close::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      mask-image: url("../../icons/logotypes/burger.svg");
+      mask-size: 24px;
+      background-color: $bg-color-dark;
+      display: block;
+    }
 
-  & .main-nav__toggle--open::before {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 25px;
-    mask-image: url("../../icons/logotypes/Logo_cross.svg");
-    mask-size: 25px;
-    background-color: $bg-color-dark;
+    & .main-nav__toggle--open::before {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      mask-image: url("../../icons/logotypes/Logo_cross.svg");
+      mask-size: 25px;
+      background-color: $bg-color-dark;
+    }
+
+    &--nojs .main-nav__toggle {
+      display: none;
+    }
   }
 }
 
