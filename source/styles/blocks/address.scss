@@ -47,7 +47,7 @@
 
 .address__wrapper {
   min-height: min-content;
-  background-color: inherit;
+  background-color: $bg-text-white;
   padding: 26px 0;
   display: flex;
   order: 0;
@@ -69,6 +69,12 @@
     padding-left: 80px;
     padding-right: 80px;
     column-gap: 40px;
+  }
+
+  &--color {
+    @media (max-width: $max-nodesctop) {
+      background-color: $background-grey;
+    }
   }
 }
 
