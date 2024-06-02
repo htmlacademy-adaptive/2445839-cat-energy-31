@@ -195,6 +195,7 @@
     font-size: $title-size;
     line-height: 20px;
     min-height: 20px;
+    text-align: end;
   }
 
   @media (min-width: $desktop-width) {

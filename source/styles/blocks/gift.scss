@@ -72,6 +72,7 @@
   line-height: 20px;
   color: $bg-text-white;
   text-align: center;
+  padding-top: 128px;
   margin: 0 auto;
   margin-top: auto;
   z-index: 2;
@@ -79,7 +80,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 60px;
-    padding-top: 14px;
+    // padding-top: 14px;
     text-align: start;
     margin: 0;
     margin-left: auto;
@@ -89,6 +90,6 @@
     margin: 0 auto;
     margin-top: auto;
     text-align: center;
-    padding-top: 0;
+    // padding-top: 0;
   }
 }
