@@ -2,7 +2,7 @@
 
 * Студент: [Кристина Т](https://up.htmlacademy.ru/adaptive/31/user/2445839).
 * Сайт: [Кэт энерджи](https://kristinatarantsova.github.io/2445839-cat-energy-31).
-* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422).
 
 
 ---
