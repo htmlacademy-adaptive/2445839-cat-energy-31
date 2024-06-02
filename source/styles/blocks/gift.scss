@@ -52,6 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 288px;
     text-align: right;
     padding: 56px 42px 43px;
     background-image: url("../../images/additional/case-desktop@1x.jpg");
@@ -86,7 +87,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    margin-top: auto;
+    margin-top: 126px;
     text-align: center;
+    padding-top: 0;
   }
 }

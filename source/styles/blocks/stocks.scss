@@ -38,6 +38,10 @@
     @media (min-width: $tablet-width) {
       top: 14px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 17px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -53,6 +57,8 @@
     font-size: $title-heading;
     line-height: 40px;
     min-height: 40px;
+    padding-left: 0;
+    margin-bottom: 73px;
   }
 }
 
@@ -79,7 +85,11 @@
   @media (min-width: $tablet-width) {
     font-size: $title-mb;
     line-height: 32px;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -88,6 +98,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 7px;
   }
 }
 
@@ -108,6 +122,10 @@
     margin-bottom: 0;
     min-width: 376px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
 }
 
 .stocks__button {
@@ -115,4 +133,8 @@
   line-height: 26px;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    width: 256px;
+  }
 }
