@@ -59,16 +59,19 @@
 }
 
 .additional__list {
+  min-height: 519px;
   padding: 0;
   list-style-type: none;
   margin: 36px 0 34px;
 
   @media (min-width: $tablet-width) {
+    min-height: 556px;
     outline: 1px solid $bg-outline;
     margin: 80px 0 70px;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 288px;
     outline: none;
     margin: 0;
   }

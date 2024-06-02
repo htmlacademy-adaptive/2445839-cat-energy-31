@@ -382,6 +382,8 @@
 }
 
 .catalog__button {
+  margin-top: auto;
+
   @media (max-width: $mobile-width-only) {
     margin: 0 auto;
     width: 280px;

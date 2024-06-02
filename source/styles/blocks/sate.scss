@@ -29,14 +29,16 @@
     margin-right: 0;
     gap: 35px;
   }
+}
 
-  &--color {
+.sate--color {
+  @media (min-width: $desktop-width) {
     background-color: transparent;
+    width: 580px;
+    justify-content: end;
 
-    @media (min-width: $desktop-width) {
-      .sate__link {
-        color: $bg-text-white;
-      }
+    .sate__link {
+      color: $bg-text-white;
     }
   }
 }

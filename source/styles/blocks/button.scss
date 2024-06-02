@@ -3,6 +3,7 @@
   font-size: $title-xs;
   line-height: 20px;
   text-align: center;
+  align-self: center;
   color: $bg-text-white;
   background-color: $basik-green;
   text-transform: uppercase;
@@ -12,7 +13,7 @@
   min-height: 40px;
   border: none;
   cursor: pointer;
-  padding: 10px 0;
+  padding: 10px 30px;
 
   &:disabled {
     fill: $bg-card-color;
@@ -51,9 +52,6 @@
   &--position {
     position: absolute;
   }
-
-  // &--secondary {
-  // }
 
   &--big {
     width: 100%;
