@@ -1,1 +1,18 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+
+picture,
+source {
+  display: contents;
+}
+
+body {
+  font-family: "Lato", "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $dark-grey;
+}

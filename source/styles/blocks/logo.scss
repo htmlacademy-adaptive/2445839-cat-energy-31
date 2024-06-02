@@ -1,0 +1,53 @@
+.logo {
+  display: flex;
+  height: 38px;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 174px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  &:not([href]) .logo__icon {
+    color: $bg-card-color;
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  &[href]:hover,
+  &[href]:focus-visible,
+  &[href]:hover .logo__icon,
+  &[href]:focus-visible .logo__icon {
+    opacity: 0.8;
+  }
+
+  &[href]:active,
+  &[href]:active .logo__icon {
+    opacity: 0.6;
+  }
+}
+
+.logo__icon--name {
+  width: 101px;
+  height: 18px;
+  margin-left: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.logo__icon--catalog {
+  height: 21px;
+}

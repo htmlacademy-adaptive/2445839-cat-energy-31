@@ -1,0 +1,200 @@
+.dignities {
+  width: 100%;
+  margin-bottom: 49px;
+  position: relative;
+  min-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      bottom: -47px;
+      position: absolute;
+      border-bottom: 1px  solid $bg-line;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+
+    &::before {
+      height: 0;
+      border-bottom: none;
+    }
+  }
+}
+
+.dignities__title {
+  font-family: $primary-font;
+  font-size: $title-x1;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+  color: $bg-color-dark;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    font-size: $title-max;
+    line-height: 60px;
+  }
+}
+
+.dignities__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: example 0;
+  display: grid;
+  grid-template-columns: 1fr;
+
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, auto);
+    gap: 37px 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, auto);
+    gap: 0;
+  }
+}
+
+.dignities__item {
+  min-height: 60px;
+  counter-increment: example 1;
+  padding-left: 80px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--offer {
+    width: 100%;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basik-green;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      align-content: center;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        width: 80px;
+        height: 80px;
+        top: 40px;
+        left: 0;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    padding-left: 0;
+    margin: 0;
+
+    &::before {
+      position: absolute;
+      text-align: end;
+      right: 0;
+      content: counters(example, ".");
+      font-family: $primary-font;
+      font-weight: inherit;
+      font-size: 280px;
+      line-height: 280px;
+      color: $background-grey;
+    }
+  }
+}
+
+.dignities__item--food {
+  &::after {
+    background-image: url("../../icons/dignities/icon-leaf.svg");
+    background-size: 24px 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-right: 94px;
+
+    &::after {
+      background-size: 30px 32px;
+    }
+  }
+}
+
+.dignities__item--nutrients {
+  &::after {
+    background-image: url("../../icons/dignities/icon-powder.svg");
+    background-size: 26px 29px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 246px;
+    margin-right: 79px;
+  }
+}
+
+
+.dignities__item--replace {
+  &::after {
+    background-image: url("../../icons/dignities/icon-eat.svg");
+    background-size: 25px 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    margin-right: 77px;
+  }
+}
+
+.dignities__item--changes {
+  &::after {
+    background-image: url("../../icons/dignities/icon-watch.svg");
+    background-size: 26px 31px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+
+    &::after {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.dignities__text {
+  width: 100%;
+  font-family: $secondary-font;
+  font-size: $title-ms;
+  line-height: 18px;
+  padding: 2px 0 4px;
+  margin: 0;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    align-self: end;
+    font-size: $title-xs;
+    line-height: 24px;
+    text-align: start;
+    margin-bottom: 54px;
+    z-index: 2;
+    padding-top: 151px;
+  }
+}

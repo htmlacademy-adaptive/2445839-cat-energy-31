@@ -1,0 +1,132 @@
+.offer {
+  width: 100%;
+  min-height: 400px;
+  background-image:
+    linear-gradient($bg-opacity 63%, $bg-text-white 40%),
+    image-set(url("../../images/offer/cat-mobile@1x.jpg")),
+    linear-gradient(90deg, $bg-line-gradient1 60%, $bg-line-gradient2 50%);
+  background-size: 100%, 320px 302px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  padding: 27px 0 42px;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    min-height: 120px;
+    padding: 0;
+    margin-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 266px;
+  }
+}
+
+.offer__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 416px;
+    margin-top: 70px;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 115px;
+    margin-left: 80px;
+  }
+}
+
+.offer__title {
+  min-height: 72px;
+  font-family: $primary-font;
+  font-size: $title-x1;
+  font-weight: 400;
+  color: $bg-text-white;
+  line-height: 36px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    font-size: 60px;
+    line-height: 60px;
+    min-height: 120px;
+    color: $bg-color-dark;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+}
+
+.offer__text {
+  min-height: 14px;
+  font-family: $primary-font;
+  font-size: $title-ms;
+  line-height: 14px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  color: $bg-text-white;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-size;
+    color: $bg-color-dark;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
+
+.offer__link {
+  font-size: $title-xs;
+  line-height: 20px;
+  display: block;
+  min-width: 280px;
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+  align-content: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-size;
+    line-height: 26px;
+    min-width: 244px;
+    min-height: 54px;
+    position: static;
+    align-self: start;
+  }
+}
+
+.offer__images-wrapper {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
+}
+
+.offer__img {
+  @media (min-width: $tablet-width) {
+    display: block;
+    top: 70%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 330px;
+    top: -82px;
+    z-index: 2;
+  }
+}

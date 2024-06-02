@@ -1,0 +1,45 @@
+.name-logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $bg-borders;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    border-bottom: 0;
+    text-align: left;
+  }
+}
+
+.name-logo__link {
+  width: 128px;
+  height: 24px;
+  display: block;
+  mask-image: url("../../icons/logotypes/logo2-mobile.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  &:not([href]) {
+    background-color: $bg-card-color;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &[href]:hover::before,
+  &[href]:focus-visible::before {
+    content: "";
+    width: 128px;
+    height: 24px;
+    display: block;
+    background-color: $bg-color-hover;
+  }
+
+  &[href]:active::before {
+    background-color: $bg-active;
+  }
+}
+
+// .name-logo__icon {
+//   display: inline-block;
+//   margin: 0 auto;
+// }

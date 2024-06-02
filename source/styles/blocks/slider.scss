@@ -1,0 +1,123 @@
+.slider {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    padding-bottom: 85px;
+    margin: 0;
+  }
+}
+
+.slider__images {
+  --curtain-place: 0.5;
+  position: relative;
+  display: grid;
+  grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
+  margin: 0 auto;
+  width: min(100%, 560px);
+  aspect-ratio: 280/256;
+}
+
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  &--before {
+    object-position: left;
+  }
+
+  &--after {
+    object-position: right;
+  }
+}
+
+.slider__toggles {
+  position: relative;
+}
+
+.slider__toggle {
+  position: absolute;
+  top: 0;
+  left: 51%;
+  width: 4px;
+  height: 100%;
+  background-color: $bg-social;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 2px;
+
+  @media (min-width: $desktop-width) {
+    left: 50%;
+  }
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid $bg-social;
+    background-color: $bg-text-white;
+    position: absolute;
+    left: -19px;
+    top: 42%;
+
+    @media (min-width: $tablet-width) {
+      top: 46%;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -18px;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 18px;
+    left: -10px;
+    top: 46%;
+    display: block;
+    background-color: $bg-social;
+    mask-image: url("../../images/slider/slider-button@1x.png");
+    mask-size: 24px 18px;
+    mask-position: center;
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      top: 48%;
+      left: -11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -10px;
+    }
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:hover::after,
+  &:focus-visible::after {
+    transition: background-color 0.2s ease-in-out;
+    background-color: $basik-green;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    transition: background-color 0.2s ease-in-out;
+    border: 2px solid $basik-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

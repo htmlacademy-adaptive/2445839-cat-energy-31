@@ -1,0 +1,59 @@
+.button {
+  font-family: $primary-font;
+  font-size: $title-xs;
+  line-height: 20px;
+  text-align: center;
+  align-self: center;
+  color: $bg-text-white;
+  background-color: $basik-green;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  width: auto;
+  min-height: 40px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+
+  &:disabled {
+    fill: $bg-card-color;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus-visible {
+    background-color: $bg-button;
+  }
+
+  &:not(:disabled):active {
+    background-color: $bg-button;
+    color: $bg-opacity-white;
+  }
+
+  &--primary {
+    width: 100%;
+    background-color: $background-grey;
+    color: $dark-grey;
+
+    &:not(:disabled):hover,
+    &:not(:disabled):focus-visible,
+    &:not(:disabled):active {
+      background-color: $bg-primary;
+      color: $dark-grey;
+    }
+
+    &:not(:disabled):active {
+      opacity: 0.7;
+      color: $dark-grey;
+    }
+  }
+
+  &--position {
+    position: absolute;
+  }
+
+  &--big {
+    width: 100%;
+  }
+}

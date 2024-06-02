@@ -1,0 +1,138 @@
+
+.main-nav {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    align-content: center;
+
+    &--opened .sate {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      z-index: 10;
+      min-height: 20vh;
+      background-color: $bg-text-white;
+    }
+
+    &--closed .main-nav__toggle::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      mask-image: url("../../icons/logotypes/burger.svg");
+      mask-size: 24px;
+      background-color: $bg-color-dark;
+      display: block;
+    }
+
+    &--opened .main-nav__toggle::before {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      mask-image: url("../../icons/logotypes/Logo_cross.svg");
+      mask-size: 25px;
+      background-color: $bg-color-dark;
+    }
+
+    &--nojs .sate {
+      position: static;
+      display: block;
+      margin-top: 15px;
+    }
+
+    @media (min-width: $tablet-width) {
+      gap: 94px;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .main-nav__toggle--close::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      mask-image: url("../../icons/logotypes/burger.svg");
+      mask-size: 24px;
+      background-color: $bg-color-dark;
+      display: block;
+    }
+
+    & .main-nav__toggle--open::before {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      mask-image: url("../../icons/logotypes/Logo_cross.svg");
+      mask-size: 25px;
+      background-color: $bg-color-dark;
+    }
+
+    &--nojs .main-nav__toggle {
+      display: none;
+    }
+  }
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--opened .sate {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    z-index: 10;
+    min-height: 20vh;
+    background-color: $bg-text-white;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  padding: 0;
+  background-color: transparent;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  text-align: end;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: $bg-card-color;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus-visible {
+    opacity: 0.7;
+  }
+
+  &:not(:disabled):active {
+    opacity: 0.5;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &--open .main-nav__sate {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    min-height: 40vh;
+    background-color: $bg-text-white;
+  }
+}
