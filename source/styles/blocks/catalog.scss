@@ -330,6 +330,7 @@
 
 .catalog__desc {
   float: left;
+  padding-right: 10px;
 }
 
 .catalog__price {
@@ -383,6 +384,9 @@
 }
 
 .catalog__button {
+  margin-top: auto;
+  align-self: end;
+
   @media (max-width: $mobile-width-only) {
     margin: 0 auto;
     width: 280px;

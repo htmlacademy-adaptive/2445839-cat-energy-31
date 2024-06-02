@@ -80,9 +80,11 @@
 .additional__item {
   padding: 13px 0 18px;
   width: 100%;
+  min-height: 130px;
   border-top: 1px solid $bg-outline;
 
   @media (min-width: $tablet-width) {
+    min-height: 139px;
     padding: 25px 38px 28px;
 
     &:last-child {
@@ -91,6 +93,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 72px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 68% 27%);
     width: 100%;
