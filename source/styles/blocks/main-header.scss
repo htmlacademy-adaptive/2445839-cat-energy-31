@@ -2,8 +2,7 @@
   width: 100%;
   min-height: 38px;
   margin: 0 auto;
-  padding-top: 13px;
-  padding-bottom: 15px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -18,10 +17,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 50px;
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     column-gap: 85px;
   }
 

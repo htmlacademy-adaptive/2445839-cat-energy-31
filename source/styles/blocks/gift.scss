@@ -2,7 +2,12 @@
   display: flex;
   width: 100%;
   min-height: 290px;
-  background-image: url("../../images/additional/case-mobile@1x.jpg");
+  background-image:
+    image-set(
+      url("../../images/additional/case-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/additional/case-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/additional/case-mobile@1x.jpg") type("image/png") 1x,
+      url("../../images/additional/case-mobile@2x.jpg") type("image/png") 2x);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -39,7 +44,12 @@
     width: 100%;
     min-height: 100%;
     padding: 57px 125px 69px 77px;
-    background-image: url("../../images/additional/case-tablet@1x.jpg");
+    background-image:
+      image-set(
+        url("../../images/additional/case-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/additional/case-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/additional/case-tablet@1x.jpg") type("image/png") 1x,
+        url("../../images/additional/case-tablet@2x.jpg") type("image/png") 2x);
 
     &::before {
       top: 57px;
@@ -55,7 +65,12 @@
     min-height: 288px;
     text-align: right;
     padding: 56px 42px 43px;
-    background-image: url("../../images/additional/case-desktop@1x.jpg");
+    background-image:
+      image-set(
+        url("../../images/additional/case-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/additional/case-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/additional/case-desktop@1x.jpg") type("image/png") 1x,
+        url("../../images/additional/case-desktop@2x.jpg") type("image/png") 2x);
 
     &::before {
       margin: 0 auto;

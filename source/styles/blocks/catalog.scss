@@ -1,5 +1,5 @@
 .catalog {
-  margin: 27px 0 23px;
+  margin: 25px 0 23px;
   position: relative;
 
   @media (max-width: $mobile-width-only) {
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 69px 0 71px;
+    margin: 64px 0 71px;
   }
 
   @media (min-width: $desktop-width) {

@@ -178,7 +178,6 @@
   }
 }
 
-
 .dignities__text {
   width: 100%;
   font-family: $secondary-font;
@@ -189,7 +188,6 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    align-self: end;
     font-size: $title-xs;
     line-height: 24px;
     text-align: start;

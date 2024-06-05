@@ -2,13 +2,13 @@
   display: flex;
   height: 38px;
   align-items: center;
-  text-align: center;
 
   @media (max-width: $mobile-width-only) {
     padding-left: 20px;
   }
 
   @media (min-width: $tablet-width) {
+    height: 50px;
     min-width: 174px;
     padding: 0;
     margin-bottom: 0;
@@ -31,6 +31,10 @@
   &[href]:active .logo__icon {
     opacity: 0.6;
   }
+}
+
+.logo__wrapper {
+  padding-top: 2px;
 }
 
 .logo__icon--name {
