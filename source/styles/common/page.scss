@@ -23,8 +23,13 @@
       position: absolute;
       background-image:
         linear-gradient($bg-opacity 60%, $bg-opacity 60%),
-        image-set(url("../../images/offer/cat-desktop@1x.jpg")),
+        image-set(
+          url("../../images/offer/cat-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/offer/cat-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/offer/cat-desktop@1x.jpg") type("image/jpg") 1x,
+          url("../../images/offer/cat-desktop@2x.jpg") type("image/jpg") 2x),
         linear-gradient($bg-gradient 60%, $bg-gradient 50%);
+      top: 0;
       right: 0;
       background-position: left;
       background-size: 50%, 720px 694px contain;

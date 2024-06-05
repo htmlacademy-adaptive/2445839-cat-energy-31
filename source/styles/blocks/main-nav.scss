@@ -3,12 +3,13 @@
   @media (max-width: $mobile-width-only) {
     width: 100%;
     align-content: center;
+    margin-top: 15px;
 
-    &--opened .sate {
+    &--opened .main-nav__sate {
       width: 100%;
       display: block;
       position: absolute;
-      top: 35px;
+      top: 50px;
       left: 0;
       z-index: 10;
       min-height: 20vh;
@@ -25,6 +26,18 @@
       display: block;
     }
 
+    &--closed:hover .main-nav__toggle::before,
+    &--closed:focus-visible .main-nav__toggle::before,
+    &--opened:hover .main-nav__toggle::before,
+    &--opened:focus-visible .main-nav__toggle::before {
+      background-color: $bg-button;
+    }
+
+    &--opened:active .main-nav__toggle::before,
+    &--closed:active .main-nav__toggle::before {
+      opacity: 0.5;
+    }
+
     &--opened .main-nav__toggle::before {
       content: "";
       display: block;
@@ -35,10 +48,9 @@
       background-color: $bg-color-dark;
     }
 
-    &--nojs .sate {
+    &--nojs .main-nav__sate {
       position: static;
       display: block;
-      margin-top: 15px;
     }
 
     @media (min-width: $tablet-width) {
@@ -52,26 +64,6 @@
       justify-content: space-between;
     }
 
-    & .main-nav__toggle--close::before {
-      content: "";
-      width: 24px;
-      height: 24px;
-      mask-image: url("../../icons/logotypes/burger.svg");
-      mask-size: 24px;
-      background-color: $bg-color-dark;
-      display: block;
-    }
-
-    & .main-nav__toggle--open::before {
-      content: "";
-      display: block;
-      width: 25px;
-      height: 25px;
-      mask-image: url("../../icons/logotypes/Logo_cross.svg");
-      mask-size: 25px;
-      background-color: $bg-color-dark;
-    }
-
     &--nojs .main-nav__toggle {
       display: none;
     }
@@ -82,7 +74,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  &--opened .sate {
+  &--opened .main-nav__sate {
     width: 100%;
     display: block;
     position: absolute;
@@ -106,33 +98,7 @@
   border: none;
   cursor: pointer;
 
-  &:disabled {
-    background-color: $bg-card-color;
-    cursor: default;
-    opacity: 0.3;
-  }
-
-  &:not(:disabled):hover,
-  &:not(:disabled):focus-visible {
-    opacity: 0.7;
-  }
-
-  &:not(:disabled):active {
-    opacity: 0.5;
-  }
-
   @media (min-width: 768px) {
     display: none;
-  }
-
-  &--open .main-nav__sate {
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    min-height: 40vh;
-    background-color: $bg-text-white;
   }
 }
